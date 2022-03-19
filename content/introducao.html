@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução &#8212; My sample book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Boas-vindas
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/introducao.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/introducao.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/content/introducao.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fluxo-de-trabalho">
+   Fluxo de trabalho
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#organizando-um-projeto-de-pesquisa">
+   Organizando um projeto de pesquisa
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teoria">
+     Teoria
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ferramentas">
+     Ferramentas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#programacao">
+     Programação
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introdução</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fluxo-de-trabalho">
+   Fluxo de trabalho
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#organizando-um-projeto-de-pesquisa">
+   Organizando um projeto de pesquisa
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#teoria">
+     Teoria
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ferramentas">
+     Ferramentas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#programacao">
+     Programação
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introducao">
+<h1>Introdução<a class="headerlink" href="#introducao" title="Permalink to this headline">¶</a></h1>
+<p>Este capítulo serve como introdução à análise de dados como um fluxo de trabalho. Discutimos como teoria, estatística e programação andam de mão dadas durante um processo de análise de dados. Além disto, veremos aspectos básicos de instalação do Python e bibliotecas que serão usadas ao longo do livro.</p>
+<div class="section" id="fluxo-de-trabalho">
+<h2>Fluxo de trabalho<a class="headerlink" href="#fluxo-de-trabalho" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><em><strong>“A pesquisa não garante recompensas certas, mas garante menores riscos”
+(Amit Kalantri)</strong></em></p>
+</div></blockquote>
+<p>Bons projetos de pesquisa, dentro dos quais uma análise de dados sólida se encaixa, têm características em comum. Primeiro, eles são fruto de muito planejamento. Isto quer dizer que explorações espontâneas de dados, sem nenhuma expectativa nem objetivo final dificilmente se tornam análises cuja execução valha a pena. E caso seja executada, a obtenção de resultados (mesmo que nunca haja garantia de resultado) seja muito arriscada. Um bom pesquisador visa minimizar este risco e ter resultados em longo prazo.</p>
+<p>Segundo, é necessário ter algum domínio mínimo de ferramentas. Quando falamos de ferramentas técnicas, incluímos como projetar a coleta de dados (obtenção de dados prontos, desenvolvimento de questionários, adaptação de escalas, etc.), manipular (no sentido de fazer transformações), limpar (tirar a ruídos indesejados), visualizar e apresentar dados. Neste cenário, técnicas estatísticas são essenciais. Isto é, é necesário ter uma independência metodológica mínima para conduzir uma análise de dados do início ao fim. Conhecer ferramentas permite saber até onde você pode planejar um experimento ou de que modo você planejará o fluxo de coleta de dados.</p>
+<p>Terceiro, uma coleta de dados - pelo menos sob a ótica de ciências sociais aplicadas - parte do princípio que deve haver explicações e argumentos para os fenômenos a serem analisados. Se você não sabe porque coletar, nem como coletar, nem o que coletar, você tem um problema grave! Você pode cair no clichê de entrou <strong>lixo, saiu lixo</strong> (<strong>garbage in, garbage out</strong>) teórico. Pior ainda, você pode tirar conclusões absurdas, sem fundamento dos dados ou da teoria - porque como sabemos, coincidências acontecem.</p>
+<p>Quarto,bons projetos de pesquisa dependem de experiência com pesquisa. Isto é um conceito tautológico (para pesquisar, precisa pesquisar), mas é a pura verdade. Via de regra nossos primeiros projetos têm diversas limitações graves (quando não acabam sendo totalmente inutilizados). Isto se deve à nossa incapacidade de planejar aspectos inesperados ou não experienciados anteriormente, o que acaba sendo minimizado com tempo. Apesar de ser possível aprender com experiência própria, muitas vezes ignoramos o que podemos aprender com erros dos outros, especialmente em livros com cunho prático.</p>
+<p>De forma genérica, este livro tem como objetivo integrar esses quatro aspectos:</p>
+<ul class="simple">
+<li><p>Planejamento</p></li>
+<li><p>Conhecimento técnico (estatístico / analítico)</p></li>
+<li><p>Conhecimento teórico (explicação de fenômenos)</p></li>
+<li><p>Experiência</p></li>
+</ul>
+<p>Esperamos que compartilhando experiências de projetos passados - incluindo acertos e muitos erros, além de muitas horas de estudo - você consiga aprimorar sua capacidade de análise de dados. Bom proveito!</p>
+</div>
+<div class="section" id="organizando-um-projeto-de-pesquisa">
+<h2>Organizando um projeto de pesquisa<a class="headerlink" href="#organizando-um-projeto-de-pesquisa" title="Permalink to this headline">¶</a></h2>
+<p>Antes de mais nada, vamos exemplificar um projeto mínimo de análise de dados. Como você pode ver no quadro abaixo, a análise de dados não é a parte inicial - afinal, acabamos de ver que fases como conhecimento de teoria e planejamento de pesquisa são fundamentais para ter um projeto bem elaborado e potencialmente bem sucedido. Aqui temos um novo elemento - a <strong>programação</strong>. Apesar de não ser necessário programar para fazer análises de dados, hoje em dia é fora de questão o quanto é mais rápido, prático, reproduzível e seguro utilizar programação como motor procedimental da pesquisa.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Teoria</p></th>
+<th class="head"><p>Ferramentas</p></th>
+<th class="head"><p>Programaçãoo</p></th>
+<th class="head"><p>Conteúdo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>X</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>Desenvolvimento de base teórica</p></td>
+</tr>
+<tr class="row-odd"><td><p>X</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p>Argumentação de hipóteses</p></td>
+</tr>
+<tr class="row-even"><td><p>X</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p>Desenvolvimento de hipoteses</p></td>
+</tr>
+<tr class="row-odd"><td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>Planejamento de coleta de dados</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>Coleta de dados</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>Limpeza e manipulação de dados</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>Análise de dados</p></td>
+</tr>
+<tr class="row-odd"><td><p>X</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p>Discussão</p></td>
+</tr>
+<tr class="row-even"><td><p>X</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p>Conclusões</p></td>
+</tr>
+<tr class="row-odd"><td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>Desenvolvimento do manuscrito</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>Como exemplo ilustrativo, vamos imaginar que um pesquisador queira entender os mecanismos que explicam <strong>a melhor forma de fazer pipoca</strong>.</p>
+</div></blockquote>
+<div class="section" id="teoria">
+<h3>Teoria<a class="headerlink" href="#teoria" title="Permalink to this headline">¶</a></h3>
+<p>E afinal, o que é a melhor forma de fazer pipoca? Sem ter clareza do que é uma pipoca bem feita - ou um bom processo de se fazer pipoca - qualquer coisa serve. E um bom pesquisador se preocupa primeiro com o conceito de <strong>reprodutibilidade</strong> - isto é, fazer com que o processo de pesquisa possa ser reproduzido por qualquer pessoa.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.science.org/doi/full/10.1126/science.1250475?casa_token=v6fVwvIFVFwAAAAA:_-ehR5dsh9crpXrB3cRu9N2P2ZE3fbJkNoW2HjcSz4dV6Y44fILbGtHAF7WUP_usuzu_s5pXjH8JuQ"><strong>Reprodutibilidade</strong> é uma abordagem importante que cientistas usam para obter confiança em suas conclusões</a> (McNutt, 2014).</p>
+</div></blockquote>
+<p>Isto nos traz uma enorme responsabilidade - no caso, nosso exemplo ilustrativo (como fazer pipoca) tem pouco impacto no nosso mundo à volta - a menos que você seja um pipoqueiro, já que nesse caso trata-se de algo com alto impacto real. No entanto, pesquisas de verdade afetam saúde humana, economia e emprego, meio ambiente e socidade, para citar poucos exemplos. Portanto, é necesário ser muito detalhista quanto ao passo-a-passo empregado. Chamamos este cuidado de <strong>suficiência descritiva</strong>. Afinal, trabalhos que não sejam passíveis de reprodução, não são passíveis de confirmação. Ou seja, qualquer detalhe ou aspecto que não esteja explícito no seu trabalho, impede sua reprodução futura e comparação. Como exemplo (de um subproduto de pesquisa científica), a suficiência descritiva é um pré-requisito para a obtenção de uma patente.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.uspto.gov/web/offices/pac/mpep/s2164.html#d0e215634"><strong>Suficiência descritiva</strong> se trata do mínimo de descrição do seu procedimento que permita que outros executem sem distorção aquilo que você executou</a>.</p>
+</div></blockquote>
+<p>Isto quer dizer que você precisa ter uma definição reproduzível do que é “a melhor forma de fazer pipoca”. Perceba que “a melhor forma de fazer pipoca” pode ter diversas interpretações. Neste sentido, um bom pesquisador não reinventa a roda - por que iríamos criar uma nova definição para “a melhor forma de fazer pipoca”, se provavelmente alguém já pesquisou isto anteriormente? Para tanto, uma <strong>revisão de literatura</strong> serve para garantir que você não vai ter retrabalho.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://us.sagepub.com/en-us/nam/conducting-research-literature-reviews/book259191"><strong>Revisão de Literatura</strong> é um método sistemático, explícito e reproduzível de identificar, avaliar e sintetizar o conhecimento existente produzido por pesquisadores e praticantes de um dado assunto</a> (Fink, 2019).</p>
+</div></blockquote>
+<p>Uma boa revisão de literatura pode, inclusive, mostrar que nossa ideia já foi realizada e que há nada ou pouco a se ganhar investindo tempo e esforço nessa análise. Gastar tempo com uma boa revisão de literatura nos faz mais confortáveis com procedimentos análogos usados anteriormente, mas principalmente em verificar se o impacto potencial desse projeto afeta significativamente a produção de conhecimento científico. Chamamos este potencial de <strong>lacuna de pesquisa</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK126702/#:~:text=We%20define%20a%20research%20gap,in%20prioritization%2C%20into%20research%20needs."><strong>Lacuna de pesquisa</strong> é um tópico ou área no(a) qual informação faltante ou inadequada limita a capacidade de chegar a uma conclusão para uma determinada questão</a> (Robinson <em>et al</em>., 2013).</p>
+</div></blockquote>
+<p>Em bom português, uma lacuna de pesquisa é algo que na ciência ainda é mal explorado ou inexplorado.</p>
+<p>Buscando na literatura, encontramos uma definição bastante aceita - “a melhor forma de fazer pipoca é maximizar a quantidade de milho estourado, minimizando a quantidade de milho queimado”. Esta definição é específica e mensurável, com escopo bem definido - bons sinais de que é uma definição utilizável. Mais adiante discutiremos métricas, mas você já pode criar uma métrica com base nesta definição: melhor pipoca (<span class="math notranslate nohighlight">\(M{p}\)</span>) será a razão entre a quantidade de milho estourado (<span class="math notranslate nohighlight">\(M{e}\)</span>) e a quantidade de milho queimado (vulgarmente conhecido por <em>piruá</em>: <span class="math notranslate nohighlight">\(M{q} + 1\)</span>, em que o <em>+ 1</em> serve para evitar divisão por zero, por exemplo):</p>
+<p><span class="math notranslate nohighlight">\(M{p} = \frac{M{e}}{M{q} + 1} \)</span></p>
+<p>Note que esta definição ignora outras dimensões que podem ser utilizadas para entender “a melhor forma de fazer pipoca” (como, por exemplo, sabor). Por outro lado, isolar e focar em uma parte do problema é uma excelente estratégia para analisar dados porque permite compartimentalizar o problema em problemas menores. Via de regra a ciência caminha mais longe indo em pequenos passos, do que em grandes saltos. Este tipo de escolha (qual definição empregar) tem diversos prós e contras, já faz parte do planejamento e afeta diretamente os procedimentos de coleta de dados. De toda forma, esta definição serve para o propósito do trabalho, ao permitir que os seus procedimentos sejam reproduzidos. Chamamos esta definição de <strong>definição de trabalho</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.ldoceonline.com/dictionary/working-definition-theory-title"><strong>Definição de trabalho</strong> é a definição usada ou escolhida para um conceito, que apesar de não cobrir de forma completa todas as acepções do conceito, é suficiente para ser operacionalizada em uma pesquisa</a> (Longman, 2022).</p>
+</div></blockquote>
+</div>
+<div class="section" id="ferramentas">
+<h3>Ferramentas<a class="headerlink" href="#ferramentas" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><em><strong>“Chamar um estatístico depois que o experimento foi feito é o mesmo que pedir a ele que faça uma exumação: talvez ele possa dizer qual o motivo pelo qual o experimento morreu” (Ronald Fisher)</strong></em></p>
+</div></blockquote>
+<p>Neste momento temos duas direções possíves principais para seguir com nossa análise: planejar cuidadosamente como continuar ou fazer sem planejamento. Esperamos que você já esteja convencido de que o caminho menos doloroso é o do planejamento.</p>
+<p>Voltando à nossa definição de trabalho, “a melhor forma de fazer pipoca é maximizar a quantidade de milho estourado, minimizando a quantidade de milho queimado”. Observando esta definição, parece provável que encontraremos o ponto ideal fazendo pipoca somente uma vez? Então, temos que planejar passo-a-passo como executar este procedimento - para podermos comparar resultados difentes entre os diversos lotes de pipoca feitos e também para podermos passar pelo crivo da reprodução pelos nossos <strong>pares</strong>:</p>
+<blockquote>
+<div><p><strong>Pares</strong> são os demais cientistas pesquisadores, que podem e devem tentar reproduzir nossos resultados usando os nossos procedimentos ou refinando os procedimentos.</p>
+</div></blockquote>
+<p>Sim! Tudo o que fazemos de pesquisa passa pelo que chamamos de <strong>processo de revisão dupla cega por pares</strong>:</p>
+<blockquote>
+<div><p><strong>Processo de revisão dupla cega por pares</strong> é o processo pelo qual nossos achados científicos são avaliados por outros cientistas, sem que nós saibamos quem nos avaliou e nem quem avaliou saiba quem nós somos. Isto garante isonomia e maior objetividade na avaliação dos resultados.</p>
+</div></blockquote>
+<p>Por este motivo, você pode apostar que seus revisores olharão com alto grau de detalhismo o seu manuscrito, tentando encontrar o maior número possível de falhas. O trabalho de um revisor (além de dar conselhos para a melhoria do projeto de pesquisa) é garantir com rigor que resultados inexplicados, procedimentos ambíguos, indícios de má-fé não sejam parte de um trabalho acadêmico publicado. A ciência é uma comunidade muito cuidadosa com a sua reputação e há muitos casos em que trabalhos são, mesmo depois de publicados, retratados - i.e., retirados de uma revista, algo muito vergonhoso.</p>
+<blockquote>
+<div><p><strong>Retratação</strong> é o ato de retirar um artigo de uma revista por indícios de fraude, má-fé ou baixa qualidade. Revistas ainda impressas reimprimem o artigo com uma tarja de “RETRATADO” e artigos digitais substituem o original por um com a tarja e ambos costumam ser acompanhados de uma carta dos editores explicando o motivo.</p>
+</div></blockquote>
+<p>Um caso recente foi o do artigo do médico francês Didier Raoult, que sugeria que hidroxicloroquina e azitromicina serviriam no tratamendo de Covid-19. Este artigo foi retratado por <a class="reference external" href="https://www.isac.world/news-and-publications/official-isac-statement">“não cumprir com os padrões de pesquisa esperados, especialmente relativos à falta de explicação para critérios de exclusão e triagem de pacientes que assegurem a integridade física dos pacientes”</a>. Este caso ilustra que a falta de cuidado com os procedimentos de pesquisa pode por em dúvida os resultados e impedir a reprodução do trabalho por outros pesquisadores. Planejar adequadamente o projeto de pesquisa inclui pensar em quais aspectos podem invalidar os resultados no final. E este caso nos faz pensar em um conceito básico de qualquer projeto de análise de dados - a <strong>mensuração</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://ecampusontario.pressbooks.pub/prechemmods/chapter/chapter-1/"><strong>Mensuração</strong> é baseada em dois critérios básicos: a <strong>acurácia</strong>, que indica quanto o valor medido se aproxima do valor real, e a <strong>precisão</strong>, o grau de reprodutibilidade da medição (i.e., o quanto as medições do mesmo item são próximas entre si)</a> (Vreugdenhil &amp; Wright, 2019).</p>
+</div></blockquote>
+<p>Análises de dados de forma geral e estudos científicos de modo particular são especialmente afetados em termos de confiabilidade quando as mensurações perdem acurácia e precisão. Quando comparamos as diversas vertentes de pesquisas, deve-se perceber que há expectativas diferentes quando à mensuração. Imagine que estamos desenvolvendo uma análise em engenharia de produção e uma métrica do estudo é o peso de um saco de arroz saindo de uma máquina ensacadora. A expectativa é que, por ser um processo altamente mecanizado e parametrizado, a precisão e acurácia sejam altas - ou seja, o medição do peso do saco de arroz seja muito próximo do real e que cada medição seja muito próxima da outra. Por outro lado, se você pretende analisar questões mais subjetivas (como qualidade de serviço e intenção de compra), naturalmente as medições disto serão menos precisas. Numa análise chamamos essas medições (classicamente na estatística) de <strong>variáveis</strong> (apesar de você também ouvir outros termos como <em>features</em>, termo vindo da computação):</p>
+<blockquote>
+<div><p><strong>Variáveis</strong> são formas de computar dados em que os valores (o conteúdo do dado) variam.</p>
+</div></blockquote>
+<p>Vamos ver variáveis adiante com detalhes, mas alguns exemplos podem servir para você começar a entender. Voltando ao nosso experimento da pipoca, podemos definir algumas variáveis iniciais:</p>
+<ul class="simple">
+<li><p>Temperatura da panela (medida em graus Celsius) - <span class="math notranslate nohighlight">\(C\)</span></p></li>
+<li><p>Tempo de cozimento (medida em segundos) - <span class="math notranslate nohighlight">\(S\)</span></p></li>
+<li><p>Quantidade de milho (medida em gramas) - <span class="math notranslate nohighlight">\(G\)</span></p></li>
+</ul>
+<p>Ou seja, <span class="math notranslate nohighlight">\(M{p}\)</span> é um função de <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(S\)</span> e <span class="math notranslate nohighlight">\(G\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(M{p} = f(C, S, G)\)</span></p>
+<p>Apesar de ser um modelo grosseiro, já podemos ver o delineamento de um experimento tomando forma. Ou seja, para aumentar (<span class="math notranslate nohighlight">\(M{p}\)</span>) precisamos controlar com precisão e acurácia as variáveis temperatura, tempo e quantidade a cada vez que o procedimento (fazer pipoca) for realizado. É preciso também, além de planejamento, muita organização para que os dados não se percam, confundam ou sejam distorcidos (lembre-se da tal reprodutibilidade). A forma mais comum de guardar estes dados será por meio de <strong>dados tabulares</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://papl.cs.brown.edu/2016/intro-tabular-data.html"><strong>Dados tabulares</strong> são dados guardados em um formato de tabela</a> (Krishnamurthi, Lerner &amp; Politz, 2016).</p>
+</div></blockquote>
+<p>Você provavelmente já teve alguma experiência com um programa de gestão de dados tabulares (como o Excel ou o LibreOffice Calc). Até mesmo a maioria das crianças já utilizou dados tabulares na famosa brincadeira conhecida como “ABC” ou “Adedanha” (dependendo da região do país) - com colunas separadas para animal, carro, fruta, país, etc. Perceba que as crianças são cientistas natas e quando alguém tenta adulterar as respostas para ganhar pontos, rapidamente há reclamação e protestos (quem dera que os adultos fossem mais como as crianças em relação a estudos científicos!). Mas ao contrário da brincadeira ABC, que visa medir conhecimento geral dos competidores, um estudo científico busca relacionar as variáveis entre si. Existem duas formas principais de relacionamento entre variáveis (e vamos ver com detalhes mais adiante): a <strong>correlação</strong> e a <strong>causalidade</strong>:</p>
+<blockquote>
+<div><p><strong>Correlação</strong> é quando duas variáveis têm uma <em>relação</em> entre si. Por exemplo, altura dos pais e filhos são correlacionados - existe uma tendencia de ambas serem maiores ou menos de forma conjunta.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Causalidade</strong> é quando mede-se o quanto uma variável <em>causa</em> variação em outra.</p>
+</div></blockquote>
+<p>Por exemplo, esperamos uma <strong>correlação</strong> entre as variáveis <em>temperatura</em> e o número de pipocas estouradas (ambas crescem juntas). Mais que isto, esperamos que haja <strong>causalidade</strong> da tenmperatura com para o número de pipocas estouradas. Assim chegamos a um corolário interessante:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://projecteuclid.org/journals/statistical-science/volume-10/issue-4/Correlations-Genuine-and-Spurious-in-Pearson-and-Yule/10.1214/ss/1177009870.full">Toda causalidade implica em correlação, mas <strong>correlação não implica em causalidade</strong></a> (Aldrich, 1995).</p>
+</div></blockquote>
+<p>Este é um problema muito grande para boa parte das pessoas - já que para um olhar menos treinado pode-se confundir ambos ou fundi-los no mesmo conceito.</p>
+<p>Um exemplo simples para percebermos isto: imagine uma cidade litorânea que encomenda um estudo sobre os afogamentos à beira-mar. Um pesquisador com pouca experiência coleta os dados de <em>unidades de picolés vendidos</em> na localidade juntamente com o <em>número de afogamentos</em>. Ele descobre que sim, há correlação significante - isto é, <em>o número de picolés vendidos e os afogamentos parecem atrelados</em> (quando um sobe o outro sobe junto e quando um desce o outro desce junto). O pesquisador, sem muita preparação de métodos, sugere uma relação de causalidade: <em>os picolés estão causando afogamentos</em>. No entanto, este caso é um exemplo clássico do que chamamos de <strong>relação espúria</strong> ou <strong>correlação espúria</strong>. Na verdade, um observador mais atento percebe que há uma <em>terceira variável</em> não incluída na análise que motiva ambos - a temperatura. O aumento da temperatura está correlacionado tanto ao número de picolés vendidos (quanto mais quente, mais pessoas buscam comprar picolés) quanto com o maior fluxo de pessoas na praia que ocasiona afogamentos (quanto mais quente, mais pessoas buscam ir a praia).</p>
+<blockquote>
+<div><p><a class="reference external" href="http://singapore.cs.ucla.edu/LECTURE/lecture_sec1b.htm"><strong>Correlação espúria</strong> acontece quando dois ou mais eventos são associados (i.e., com correlação significativa) mas não são relacionados de forma causal</a> (Pearl, 2019).</p>
+</div></blockquote>
+<p>Uma análise sólida de dados vai muito além do que discutimos aqui, mas você já consegue ter uma noção dos passos de uma pesquisa, da preocupação com a responsabilidade do estudo e do cuidado necessário com os dados.</p>
+</div>
+<div class="section" id="programacao">
+<h3>Programação<a class="headerlink" href="#programacao" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><em><strong>“Falar é fácil, me mostre o código” (Linus Torvalds)</strong></em></p>
+</div></blockquote>
+<p>Talvez você esteja se questionando onde em tudo isto se encaixam as habilidades em programação. De forma muito direta, a programação não é absolutamente necessária para o desenvolvimento de uma análise de dados, afinal durante séculos estes processos foram feitos manualmente e somos gratos ao desenvolvimento científico obtido por meio deles. Em muitos programas de mestrado e doutorado ainda há uma valorização do papel do pesquisador em fazer listas de exercícios de testes como ANOVA à mão. Claro, este tipo de preparação tem suas vantagens, como promover um entendimento melhor do mecanismo e a criação de pensamento analítico.</p>
+<p>Por outro lado, seria ingênuo ignorar os benefícios da incorporação do poder computacional ao campo de análise de dados. Por exemplo, todo um processo de padronização dos passos de uma pesquisa acaba acontecendo quando se se incorporam aspectos de computação. Um caso interessante é o atual sistema de registro de vacinas de Covid-19 na base do <a class="reference external" href="https://datasus.saude.gov.br/">DataSus</a> (base de dados abertos do Sistema Único de Saúde do governo federal brasileiro:</p>
+<div class="admonition-caso-datasus admonition">
+<p class="admonition-title">Caso: DataSus</p>
+<p>Durante o desenvolvimento do questionário de vacinação, o campo “vacina” (que indica o fabricante / marca da vacina) foi definido como “aberto” - i.e., preenchimento manual, escrevendo o nome da vacina aplicada. Em teoria, isto não deveria ser um problema, já que somente 4 marcas de vacina foram aplicadas no Brasil (até março de 2022). No entanto, erros de digitação (que podem ser fruto de falta de atenção, desconhecimento, dificuldade com nomes estrangeiros ou até mesmo má-fé) fizeram com que mais de 1700 escritas diferentes fossem encontradas.</p>
+</div>
+<p>Mesmo utilizando-se de técnicas avançadas de limpeza e manipulação de texto, boa parte dessas informações é inutilizada. Conhecimento prévio de programação (tanto sob o ponto de vista de desenvolvimento de questionário/formulário quanto de problemas subsequentes de padronização de variáveis) poderia evitar tal perda. Isto aponta para a programação ser um pilar importante da reprodutibilidade discutida anteriormente - afinal, o computador executa a mesma ação inúmeras vezes sem errar (contanto que você programe corretamente), enquanto nós humanos somos muito mais passíveis de errar.</p>
+<p>Esta repetição de passos é muito importante porque permite promover um protocolo de automatização de tarefas. Uma vez que você escreva um código (e tenha salvo um <em>script</em>), este bloco de código poderá ser executado à exaustão. Todas as linguagens de programação contam com estruturas de repetição, que facilitam a automatização de tarefas.</p>
+<p>Capacidade computacional
+Extensão para outras áreas (aprendizado de máquina, aprendizado profundo etc)</p>
+<blockquote>
+<div><p><strong>“O melhor de ser um estatístico é que você consegue brincar no quintal de todo mundo” (John Wilder Tukey)</strong></p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By The Jupyter Book Community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
