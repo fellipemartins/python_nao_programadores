@@ -1,13 +1,13 @@
 # Boas-vindas
 
-```{admonition} Nota 
-⚠️ Este livro está em construção!
-```
+<div class="admonition warning" name="html-warning">
+<p class="title">Aviso</p>
+**Este livro está em construção!**
+</div>
 
 Sejam bem-vindos(as) ao livro **Análise de dados e estatística com Python para não programadores**. Este livro tem como objetivo oferecer uma introdução à programação em Python e suas diversas bibliotecas para análise de dados e estatística.
 
 Esta é a versão interativa do livro. Para acessar a versão em `.pdf`, clique [aqui]().
-
 
 ## Motivação
 
@@ -75,9 +75,10 @@ Este livro foi escrito por Fellipe Silva Martins e Leonardo Vils.
 
 > Leonardo Vils é economista com Mestrado e Doutorado em Administração de Empresas pela Universidade Nove de Julho. Professor permanente do programa de Pós-Graduação em Cidades Inteligentes e Sustentáveis e do Programa de Pós-Graduação em Gestão de Projetos da Universidade Nove de Julho. Tem como linhas de pesquisa Psicologia Ambiental e Território Construído e Economia Comportamental e Inovação em Projetos. Experiência de mais de 25 anos em cargos executivos de empresas de grande porte. Autor de sete livros.
 
-``` {admonition} Nota:
-⚠️ Este livro representa a opinião única e exclusivamente dos autores.
-```
+<div class="admonition warning" name="html-warning">
+<p class="title">Aviso</p>
+**Este livro representa única e exclusivamente a opinião dos autores.**
+</div>
 
 Colaboraram com este projeto:
 - [Cristiano Silva Martins](http://lattes.cnpq.br/2134033520588291) - revisão de texto, casos de estudo;
@@ -87,7 +88,8 @@ Colaboraram com este projeto:
 ## Agradecimentos
 
 Fellipe Martins: 
-Gostaria de agradecer aos seus professores de estatística, métodos quantitativos e metodologia de pesquisa: Dr. Fábio Pereira, Dr. Dirceu da Silva, Dr. Evandro Lopes, Marcelo Gabriel e Dr. Wagner Cezar Lucato. Além disto, agradeço a meus professores de programação em Python, Caio Salgado, Deborah Foroni, Luiz Favaro e Carlos Prado.
+
+*Gostaria de agradecer aos seus professores de estatística, métodos quantitativos e metodologia de pesquisa: Dr. Fábio Pereira, Dr. Dirceu da Silva, Dr. Evandro Lopes, Marcelo Gabriel e Dr. Wagner Cezar Lucato. Além disto, agradeço a meus professores de programação em Python, Caio Salgado, Deborah Foroni, Luiz Favaro e Carlos Prado.*
 
 Leonardo Vils 
 

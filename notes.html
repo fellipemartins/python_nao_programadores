@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Análise de dados e estatística com Python para não programadores</title>
+    <title>MyST cheatsheet &#8212; Análise de dados e estatística com Python para não programadores</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -146,6 +146,23 @@ const thebe_selector_output = ".output, .cell_output"
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/notes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -157,7 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fnotes.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -178,6 +195,39 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   MyST cheatsheet
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-admonitions">
+   MyST Admonitions
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-table-formats">
+   MyST table formats
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-internal-referencing">
+   MyST internal referencing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-cheat-sheet">
+   MyST Cheat Sheet
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -185,24 +235,164 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>MyST cheatsheet</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   MyST cheatsheet
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-admonitions">
+   MyST Admonitions
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-table-formats">
+   MyST table formats
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-internal-referencing">
+   MyST internal referencing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-cheat-sheet">
+   MyST Cheat Sheet
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="tex2jax_ignore mathjax_ignore section" id="myst-cheatsheet">
+<h1>MyST cheatsheet<a class="headerlink" href="#myst-cheatsheet" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-admonitions">
+<h1>MyST Admonitions<a class="headerlink" href="#myst-admonitions" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Nota:
+⚠️ Este livro representa a opinião única e exclusivamente dos autores.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Nota:
+⚠️ Este livro representa a opinião única e exclusivamente dos autores.</p>
+</div>
+<div class="admonition note" id="html-admonition">
+<p class="admonition-title">This is the <strong>title</strong> Título!</p>
+<p>This is the <em>content</em></p>
+</div>
+<div class="admonition">
+<p class="admonition-title">Note</p>
+<p>Some <strong>content</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+</div>
+</div>
+<div class="admonition note" id="id1">
+<p class="admonition-title">Nota</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition warning" id="html-warning">
+<p class="admonition-title">Aviso</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition tip" id="html-tip">
+<p class="admonition-title">Dica</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition caution" id="html-caution">
+<p class="admonition-title">Cuidado</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition attention" id="html-attention">
+<p class="admonition-title">Atenção</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition danger" id="html-danger">
+<p class="admonition-title">Perigo!</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition error" id="html-error">
+<p class="admonition-title">Erro</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+<div class="admonition important" id="html-important">
+<p class="admonition-title">Importante</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-table-formats">
+<h1>MyST table formats<a class="headerlink" href="#myst-table-formats" title="Permalink to this headline">¶</a></h1>
+<table class="table" id="example-table">
+<caption><span class="caption-text">This table title</span><a class="headerlink" href="#example-table" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Training</p></th>
+<th class="head"><p>Validation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>13720</p></td>
+<td><p>2744</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-internal-referencing">
+<h1>MyST internal referencing<a class="headerlink" href="#myst-internal-referencing" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-cheat-sheet">
+<span id="id2"></span><h1>MyST Cheat Sheet<a class="headerlink" href="#myst-cheat-sheet" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#id2"><span class="std std-ref">MyST Cheat Sheet</span></a>
+<a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a>
+<a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a></p>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
