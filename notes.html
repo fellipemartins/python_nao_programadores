@@ -97,20 +97,37 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparação
+ </span>
+</p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/como_usar_livro.html">
+   Como usar este livro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/linha_comando.html">
+   Fundamentos de linha de comando
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="markdown.html">
    Markdown Files
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programação em Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    Content with notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
   </a>
  </li>
 </ul>
@@ -225,6 +242,16 @@ const thebe_selector_output = ".output, .cell_output"
    MyST Cheat Sheet
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-panels">
+   MyST panels
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-figure-link">
+   MyST figure / link
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -270,6 +297,16 @@ const thebe_selector_output = ".output, .cell_output"
    MyST Cheat Sheet
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-panels">
+   MyST panels
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-figure-link">
+   MyST figure / link
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -281,7 +318,8 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="myst-cheatsheet">
 <h1>MyST cheatsheet<a class="headerlink" href="#myst-cheatsheet" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a></p>
+<p><a class="reference internal" href="#id3"><span class="std std-ref">MyST syntax lecture</span></a></p>
+<p><a class="reference external" href="https://jupyterbook.org/customize/config.html">https://jupyterbook.org/customize/config.html</a></p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-admonitions">
 <h1>MyST Admonitions<a class="headerlink" href="#myst-admonitions" title="Permalink to this headline">¶</a></h1>
@@ -340,6 +378,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">Importante</p>
 <p>Este é o <em>conteúdo</em></p>
 </div>
+<div class="admonition seealso" id="id2">
+<p class="admonition-title">Veja também</p>
+<p>Este é o <em>conteúdo</em></p>
+</div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-table-formats">
 <h1>MyST table formats<a class="headerlink" href="#myst-table-formats" title="Permalink to this headline">¶</a></h1>
@@ -368,10 +410,55 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>MyST internal referencing<a class="headerlink" href="#myst-internal-referencing" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-cheat-sheet">
-<span id="id2"></span><h1>MyST Cheat Sheet<a class="headerlink" href="#myst-cheat-sheet" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#id2"><span class="std std-ref">MyST Cheat Sheet</span></a>
-<a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a>
-<a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a></p>
+<span id="id3"></span><h1>MyST Cheat Sheet<a class="headerlink" href="#myst-cheat-sheet" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#id3"><span class="std std-ref">MyST Cheat Sheet</span></a>
+<a class="reference internal" href="#id3"><span class="std std-ref">MyST syntax lecture</span></a>
+<a class="reference internal" href="#id3"><span class="std std-ref">MyST syntax lecture</span></a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-panels">
+<h1>MyST panels<a class="headerlink" href="#myst-panels" title="Permalink to this headline">¶</a></h1>
+<div class="sphinx-bs container pb-4 full-width docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-jb-one docutils">
+<p class="card-text"><strong>Get started</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><strong><span class="xref myst"></span></strong>: a step-by-step tutorial to get started.</p>
+<p class="card-text"><strong><span class="xref myst"></span></strong>: get started with a simple template book.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-jb-two docutils">
+<p class="card-text"><strong>Learn more</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><strong><span class="xref myst"></span></strong>: Learn how to structure and organize your content.</p>
+<p class="card-text"><strong><span class="xref myst"></span></strong>: Learn how to write rich narrative content.</p>
+<p class="card-text"><strong><span class="xref myst"></span></strong>: Write computational content.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-jb-three docutils">
+<p class="card-text"><strong>Be inspired</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><a class="reference external" href="http://gallery.jupyterbook.org"><strong>The Jupyter Book Gallery</strong></a>: A gallery of community books that have been created with Jupyter Book.</p>
+<p class="card-text"><a class="reference external" href="https://python.quantecon.org/intro.html"><strong>The QuantEcon Python Lectures</strong></a>: A full mathematical textbook built with a custom Jupyter Book theme.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-figure-link">
+<h1>MyST figure / link<a class="headerlink" href="#myst-figure-link" title="Permalink to this headline">¶</a></h1>
+<p><span class="xref myst">Go to the fish!</span></p>
 </div>
 
     <script type="text/x-thebe-config">

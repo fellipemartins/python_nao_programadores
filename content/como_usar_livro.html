@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como usar este livro &#8212; Análise de dados e estatística com Python para não programadores</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Interface de linha de comando" href="linha_comando.html" />
+    <link rel="prev" title="Boas-vindas" href="../intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Análise de dados e estatística com Python para não programadores</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Boas-vindas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparação
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Como usar este livro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="linha_comando.html">
+   Interface de linha de comando
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown.html">
+   Markdown Files
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programação em Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/como_usar_livro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fcontent/como_usar_livro.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estrutura">
+   Estrutura
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notas">
+   Notas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicios-e-praticas">
+   Exercícios e práticas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#painel-superior">
+   Painel superior
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Como usar este livro</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estrutura">
+   Estrutura
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notas">
+   Notas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicios-e-praticas">
+   Exercícios e práticas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#painel-superior">
+   Painel superior
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="como-usar-este-livro">
+<h1>Como usar este livro<a class="headerlink" href="#como-usar-este-livro" title="Permalink to this headline">¶</a></h1>
+<p>Este livro foi pensado e planejado tendo em mente pesquisadores(as) em formação com pouco ou nenhum conhecimento em programação, análise de dados e estatística. Por este motivo, a estrutura do livro foi concebida pensando num trajeto em que, ao fim, possa-se ser capaz de planejar uma coleta de dados, limpar e tratar os dados e executar análises com uma base sólida de estatística.</p>
+<div class="section" id="estrutura">
+<h2>Estrutura<a class="headerlink" href="#estrutura" title="Permalink to this headline">¶</a></h2>
+<p>O livro conta com as seguintes partes:</p>
+<ol class="simple">
+<li><p><strong>Preparação:</strong> Nesta parte, buscamos orientar os(as) leitores(as) no aprendizado de fundamentos que servirão para o seu desenvolvimento como pesquisador(a), mas principalmente sob a perspectiva de desenvolvedor(a) de <em>software</em>. Começamos com os <strong>Fundamentos de Interface de Linha de Comando</strong>, que (apesar de opcional), é algo que tem grande impacto na produtividade em longo prazo. Em seguida, discutimos as várias formas de se fazer a <strong>Instalação do Python</strong> por meio de prós e contras das alternativas disponíveis atualmente. Consequentemente, vemos como organizar projetos de pesquisa utilizando <strong>Ambientes Virtuais</strong> e instalação de bibliotecas para evitar conflitos. Com estes passos feitos, partimos para um ambientação aos <strong><em>notebooks</em> Jupyter</strong> e seu uso (<em>notebooks</em>,  <em>lab</em> e outras IDEs) além de discorrer sobre como organizar visualmente seus projetos no Jupyter por meio da liguagem de marcação <strong>Markdown</strong>. Finalmente, são apresentados os rudimentos de gestão de <strong>Versionamento com Git e GitHub</strong>. <br><br></p></li>
+<li><p><strong>Programação em Python:</strong> Este livro não tem como propósito a formação de desenvolvedores(as) em Python, mas tenta seguir princípios para o seu desenvolvimento profissional de longo prazo. Nesta parte, vemos os blocos básicos da programação - <strong>Variáveis e operacões matemáticas</strong> e <strong>Booleanos e comparações</strong>. Em seguida, vemos estruturas mais avançadas como <strong>Texto</strong>, <strong>Funções</strong>, <strong>Espaço de nomes</strong>, <strong>Listas</strong>, <strong>Dicionários</strong> e <strong>Conjuntos</strong>. Na sequeência são apresentadas a <strong>Estrutura condicional <code class="docutils literal notranslate"><span class="pre">if</span></code></strong>, <strong>Iterações com <code class="docutils literal notranslate"><span class="pre">for</span></code></strong>, <strong>Iterações com <code class="docutils literal notranslate"><span class="pre">while</span></code></strong>, <strong>Iterações com <code class="docutils literal notranslate"><span class="pre">map()</span></code></strong> e <strong>Iterações com compreensão de lista e compreensão de dicionário</strong>. Finalmente, encerramos esta parte com <strong>Programação orientada a objetos</strong>, <strong>Criação de classes e objetos</strong>, <strong>Criação de atributos e métodos</strong>, <strong>Criação de subclasses</strong> e <strong>Documentação com <code class="docutils literal notranslate"><span class="pre">docstrings</span></code></strong>.<br><br></p></li>
+<li><p><strong>Limpeza e tratamento de dados:</strong> Esta parte prepara o(a) leitor(a) para as atividades de coleta, limpeza, manipulação e tratamento de dados. São apresentadas as principais bibliotecas (Pandas, Numpy).<br><br></p></li>
+<li><p><strong>Análise de dados e estatística:</strong>
+<br><br></p></li>
+<li><p><strong>Visualização de dados</strong>
+<br><br></p></li>
+<li><p><strong>Desenvolvimento futuro:</strong></p></li>
+</ol>
+</div>
+<div class="section" id="notas">
+<h2>Notas<a class="headerlink" href="#notas" title="Permalink to this headline">¶</a></h2>
+<p>Em cada parte você encontra diversas instâncias de dicas, avisos e mais. Veja abaixo os tipos:</p>
+<div class="admonition note" id="html-admonition">
+<p class="admonition-title">Nota</p>
+<p><strong>Notas</strong> são comentários de importância local. Servem para chamar atenção a algo específico sendo tratado no momento.</p>
+</div>
+<div class="admonition tip" id="html-tip">
+<p class="admonition-title">Dica</p>
+<p>Sempre há espaço para uma <strong>Dica</strong> em quaisquer situações da nossa vida, e aqui não é diferente.</p>
+</div>
+<div class="admonition important" id="html-important">
+<p class="admonition-title">Importante</p>
+<p><strong>Importante</strong> se aplica a diversas situações de teoria ou programação que necessitam de maior foco ao longo do livro.</p>
+</div>
+<div class="admonition caution" id="html-caution">
+<p class="admonition-title">Cuidado</p>
+<p><strong>Cuidado</strong> se refere a algo que necessita de maior atenção. Por exemplo, pode se referir a um problema teórico, prático ou técnico que afeta o resultado de uma ação.</p>
+</div>
+<div class="admonition danger" id="html-danger">
+<p class="admonition-title">Perigo!</p>
+<p>O nome é autoexplicativo - <strong>Perigo</strong> se refere a situações em que você pode criar problemas graves no seu código ou na sua pesquisa.</p>
+</div>
+<div class="admonition error" id="html-error">
+<p class="admonition-title">Erro</p>
+<p><strong>Erro</strong> é uma instância de algo que não sai como esperamos. Não necessariamente é perigoso, mas pode necessitar de atenção especial.</p>
+</div>
+<div class="admonition seealso" id="html-seealso">
+<p class="admonition-title">Veja também</p>
+<p>Este livro não é uma obra extensiva a respeito de programação, análise de dados, estatística ou metodologia de pesquisa. Notas do tipo <strong>Veja também</strong> levam a recursos fora do livro / repositório.</p>
+</div>
+</div>
+<div class="section" id="exercicios-e-praticas">
+<h2>Exercícios e práticas<a class="headerlink" href="#exercicios-e-praticas" title="Permalink to this headline">¶</a></h2>
+<p>Cada seção do livro pode conter exercícios. No momento, os exercícios não são interativos (mais adiante pretendemos integrar a biblioteca <code class="docutils literal notranslate"><span class="pre">jupyter-quiz</span></code> para acrescentar interação). Cada exercício tem uma solução sugerida, escondida por um botão. Veja o exemplo abaixo:</p>
+<br>
+<p><strong>Exercício 1:</strong> Clique no botão abaixo para ver a solução sugerida:</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Clique no botão para revelar a resposta.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">print(“Esta é a solução sugerida”)</p>
+</div>
+</details><p>É altamente sugerido que você faça os exercícios na mão - isto é digitando comando a comando. Isto é importante sobretudo para iniciantes em programação.</p>
+<div class="admonition important" id="id1">
+<p class="admonition-title">Importante</p>
+<p>Da mesma forma como no aprendizado de línguas naturais (como inglês, espanhol, etc.), a repetição é chave para automatização. Um falante fluente numa língua raramente fica pensando em como exprimir um pensamento. Guardadas as devidas proporções, um programador trabalha de forma similar. Você pode rodar os códigos prontos do repositório do livro, mas aprenderá mais se esforçando sozinho(a).</p>
+</div>
+</div>
+<div class="section" id="painel-superior">
+<h2>Painel superior<a class="headerlink" href="#painel-superior" title="Permalink to this headline">¶</a></h2>
+<p>Este livro foi construído com base numa biblioteca chamada <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a>. Isto quer dizer que cada parte deste livro é na verdade um documento <code class="docutils literal notranslate"><span class="pre">markdown</span></code> (texto e formatação) ou um <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">Jupyter</span></code>. Os notebooks Jupyter são interativos e logo adiante você aprenderá a usá-los. Por este motivo, toda pagina tem um menu em cima (vide a figura abaixo):</p>
+<img src="img/github_panel.png">
+<p>Estes três botões perminte, respectivamente:</p>
+<ul class="simple">
+<li><p>Ver o livro em tela cheia</p></li>
+<li><p>Ver o repositório do livro ou abrir um <em>issue</em> (ver seção <strong>Git e GitHub</strong>)</p></li>
+<li><p>Baixar o conteúdo da página em <code class="docutils literal notranslate"><span class="pre">.pdf</span></code> ou <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> (a extensão do notebook Jupyter)</p></li>
+</ul>
+<p>Uma vez que é possível baixar o notebook, fica fácil rodar sem ter que estudar. Veja a nota acima sobre os benefícios pedagógicos de fazer seu próprio código.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Boas-vindas</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="linha_comando.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Interface de linha de comando</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Fellipe Martins & Leonardo Vils<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

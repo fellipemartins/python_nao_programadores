@@ -7,7 +7,7 @@
 
 Sejam bem-vindos(as) ao livro **Análise de dados e estatística com Python para não programadores**. Este livro tem como objetivo oferecer uma introdução à programação em Python e suas diversas bibliotecas para análise de dados e estatística.
 
-Esta é a versão interativa do livro. Para acessar a versão em `.pdf`, clique [aqui]().
+Esta é a versão interativa do livro. A versão em `.pdf` será feita quando o livro estiver completo em sua primeira versão.
 
 ## Motivação
 
@@ -77,12 +77,12 @@ Este livro foi escrito por Fellipe Silva Martins e Leonardo Vils.
 
 <div class="admonition warning" name="html-warning">
 <p class="title">Aviso</p>
-**Este livro representa única e exclusivamente a opinião dos autores.**
+**Este livro representa única e exclusivamente a opinião dos autores e de forma alguma é relacionado com instuições, associações, empresas ou quaisquer outros vínculos empregatícios e/ou científicos dos autores.**
 </div>
 
 Colaboraram com este projeto:
-- [Cristiano Silva Martins](http://lattes.cnpq.br/2134033520588291) - revisão de texto, casos de estudo;
-- [Déborah Foroni](http://lattes.cnpq.br/4356168879181955) - revisão de código, casos de estudo;
+- [Cristiano Silva Martins](http://lattes.cnpq.br/2134033520588291).
+- [Déborah Foroni](http://lattes.cnpq.br/4356168879181955).
 
 
 ## Agradecimentos
@@ -99,10 +99,12 @@ Leonardo Vils
 ## Como citar este conteúdo
 
 **ABNT (NBR)**:
-MARTINS, F. S.; VILS, L. Análise de dados e estatística com Python para não programadores. Disponível em: <https://fellipemartins.github.io/python_analise_dados>. Acesso em: XX fev. 2021.
+MARTINS, F. S.; VILS, L. Análise de dados e estatística com Python para não programadores. Disponível em: <https://fellipemartins.github.io/python_nao_programadores/>. Acesso em: XX fev. 2021.
 
 **APA**:
-Martins, F. S.; Vils, L. (2022, Feb XX). Análise de dados e estatística com Python para não programadores. https://fellipemartins.github.io/python_analise_dados
+Martins, F. S.; Vils, L. (2022, Feb XX). Análise de dados e estatística com Python para não programadores. https://fellipemartins.github.io/python_nao_programadores/
+
+
 
 
 Ou formato BibTeX (LaTeX):
@@ -110,8 +112,8 @@ Ou formato BibTeX (LaTeX):
 @misc{martins2021pythonnaoprogramadores,
   author = {MARTINS, Fellipe Silva; VILS, Leonardo},
   title = {Análise de dados e estatística com Python para não programadores},
-  url = {https://github.com/},
+  url = {https://fellipemartins.github.io/python_nao_programadores/},
   year = {2022},
-  month = {February}
+  month = {March}
 }
 ```

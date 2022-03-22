@@ -3,6 +3,8 @@
 
 [MyST syntax lecture](myst_cheatsheet)
 
+<https://jupyterbook.org/customize/config.html>
+
 
 # MyST Admonitions
 
@@ -71,6 +73,10 @@ Este é o *conteúdo*
 Este é o *conteúdo*
 </div>
 
+<div class="admonition seealso" name="html-important">
+<p class="title">Veja também</p>
+Este é o *conteúdo*
+</div>
 
 
 # MyST table formats
@@ -97,3 +103,52 @@ Este é o *conteúdo*
 {ref}`myst_cheatsheet`
 {ref}`MyST syntax lecture <myst_cheatsheet>`
 [MyST syntax lecture](myst_cheatsheet)
+
+
+
+# MyST panels
+
+:::{panels}
+:container: +full-width
+:column: col-lg-4 px-2 py-2
+---
+:header: bg-jb-one
+**Get started**
+^^^
+
+**[](start/your-first-book.md)**: a step-by-step tutorial to get started.
+
+**[](create-a-template-book)**: get started with a simple template book.
+
+---
+:header: bg-jb-two
+
+**Learn more**
+^^^
+**[](structure:index)**: Learn how to structure and organize your content.
+
+**[](content/index.md)**: Learn how to write rich narrative content.
+
+**[](content/executable/index.md)**: Write computational content.
+---
+:header: bg-jb-three
+
+**Be inspired**
+^^^
+[**The Jupyter Book Gallery**](http://gallery.jupyterbook.org): A gallery of community books that have been created with Jupyter Book.
+
+[**The QuantEcon Python Lectures**](https://python.quantecon.org/intro.html): A full mathematical textbook built with a custom Jupyter Book theme.
+:::
+
+
+
+
+# MyST figure / link
+
+:::{figure-md} fig-target
+:class: myclass
+<img src="img/fun-fish.png" alt="fishy" class="bg-primary mb-1" width="200px">
+This is a caption in **Markdown**
+:::
+
+[Go to the fish!](fig-target)
