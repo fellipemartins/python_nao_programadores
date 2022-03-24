@@ -73,10 +73,33 @@ Este é o *conteúdo*
 Este é o *conteúdo*
 </div>
 
-<div class="admonition seealso" name="html-important">
+<div class="admonition seealso" name="html-seealso">
 <p class="title">Veja também</p>
 Este é o *conteúdo*
 </div>
+
+
+# MyST figuras
+
+imagem normal:
+
+```{image} ./img/github_panel.png
+:alt: Painel do GitHub
+:width: 200px
+:align: center
+```
+
+figuras (com referenciamento)
+
+```{figure} ./img/github_panel.png
+---
+width: 200px
+name: directive-fig
+---
+Legenda da figura!
+```
+
+
 
 
 # MyST table formats

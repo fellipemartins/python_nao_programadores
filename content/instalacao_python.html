@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instalando o Python &#8212; Análise de dados e estatística com Python para não programadores</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Markdown Files" href="../markdown.html" />
+    <link rel="prev" title="Interface de linha de comando" href="linha_comando.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Análise de dados e estatística com Python para não programadores</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Boas-vindas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparação
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introducao.html">
+   Introdução
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="como_usar_livro.html">
+   Como usar este livro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="linha_comando.html">
+   Interface de linha de comando
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Instalando o Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown.html">
+   Markdown Files
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programação em Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/instalacao_python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fcontent/instalacao_python.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Instalando o Python
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verificando-sua-versao-do-python">
+   Verificando sua versão do Python
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalando-a-distribuicao-anaconda">
+   Instalando a distribuição Anaconda
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows">
+     Windows
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linux">
+     Linux
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalando-miniconda-e-miniforge">
+   Instalando Miniconda e Miniforge
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miniconda">
+     Miniconda
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Windows
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Linux
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miniforge">
+     Miniforge
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalando-o-python-diretamente">
+   Instalando o Python diretamente
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#material-complementar">
+   Material complementar
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Instalando o Python</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Instalando o Python
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verificando-sua-versao-do-python">
+   Verificando sua versão do Python
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalando-a-distribuicao-anaconda">
+   Instalando a distribuição Anaconda
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows">
+     Windows
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linux">
+     Linux
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalando-miniconda-e-miniforge">
+   Instalando Miniconda e Miniforge
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miniconda">
+     Miniconda
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Windows
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Linux
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miniforge">
+     Miniforge
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalando-o-python-diretamente">
+   Instalando o Python diretamente
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#material-complementar">
+   Material complementar
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="instalando-o-python">
+<h1>Instalando o Python<a class="headerlink" href="#instalando-o-python" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/python_postit.jpg"><img alt="Pessoa segundando postit escrito Python" class="align-center" src="../_images/python_postit.jpg" style="width: 700px;" /></a>
+<br>
+<p>Caso você não tenha feito isto anteriormente, vamos iniciar com o processo de instalação do Python. Há mais de uma forma de se fazer isto, dependendo do seu perfil e experiência:</p>
+<ol class="simple">
+<li><p><strong>Instalação simplificada com a distribuição Anaconda</strong>: este é o procedimento para quem quer ter o menor trabalho possível.</p></li>
+<li><p><strong>Instalação de uma versão mais enxuta (Minconda, Minimamba, Miniforge)</strong>: este procedimento necessita de um pouco mais de trabalho e, possivelmente, usar comandos básicos de linha de comando.</p></li>
+<li><p><strong>Instalação manual do Python</strong>: este procedimento permite controle total sobre o processo.</p></li>
+</ol>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="verificando-sua-versao-do-python">
+<h1>Verificando sua versão do Python<a class="headerlink" href="#verificando-sua-versao-do-python" title="Permalink to this headline">¶</a></h1>
+<p>Dependendo do seu sistema operacional ou outras instalações anteriores, é possível que você já tenha o Python instalado em sua máquina.</p>
+<p>Para fazer isto no Windows, entre no <code class="docutils literal notranslate"><span class="pre">cmd</span></code> (digite <code class="docutils literal notranslate"><span class="pre">⊞</span> <span class="pre">Win</span></code> + <code class="docutils literal notranslate"><span class="pre">cmd</span></code>) e em seguida digite <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">silva</span><span class="o">&gt;</span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">Python</span> <span class="mf">3.10.2</span>
+
+<span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">silva</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Caso você não tenha o Python instalado no seu computador, uma mensagem de não reconhecimento de comando aparecerá. Caso a versão do Python no seu computador seja anterior à versão 3.8, recomendamos a atualização para a última versão estável.</p>
+<div class="admonition seealso" id="html-seealso">
+<p class="admonition-title">Veja também</p>
+<p>Neste <a href="https://acervolima.com/como-atualizar-o-python-no-windows/" target="_blank">post</a>, você encontra os procedimentos para atualizar o Python no Windows.</p>
+</div>
+<p>Não tendo nenhuma versão no seu computador, vamos ver as três opções anteriores.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="instalando-a-distribuicao-anaconda">
+<h1>Instalando a distribuição Anaconda<a class="headerlink" href="#instalando-a-distribuicao-anaconda" title="Permalink to this headline">¶</a></h1>
+<p>A distribuição Anaconda surgiu de uma necessidade da comunidade de ter em um só procedimento um executável que instalasse o Python, gerenciadores de bibliotecas e as bibliotecas mais comuns à área de ciência de dados.</p>
+<div class="admonition important" id="html-important">
+<p class="admonition-title">Importante</p>
+<p>Uma linguagem de programação, via de regra, vem de fábrica somente com os comandos básicos - isto é o cerne (<em>core</em>) da linguagem. Bibliotecas são <em>extensões</em> da linguagem que podem ser importadas ao código e geralmente são temáticas (comandos de estatística, de visualização e gráficos, etc.).</p>
+</div>
+<div class="figure align-default" id="libraries">
+<a class="reference internal image-reference" href="content/img/libraries.png"><img alt="content/img/libraries.png" src="content/img/libraries.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Exemplos de bibliotecas incluídas na distribuição Anaconda.</span><a class="headerlink" href="#libraries" title="Permalink to this image">¶</a></p>
+</div>
+<p>A distribuição Anaconda foi desenvolvida pela empresa Continuum Analytics para suprir essa demanda. Além disto, a Continuum Analytics desenvolveu um gerenciador de bibliotecas próprio (<code class="docutils literal notranslate"><span class="pre">conda</span></code>). O Python já vem por padrão com o gerenciador <code class="docutils literal notranslate"><span class="pre">pip</span></code>, mas este só opera com bibliotecas de Python. Como é muito comum usar bibliotecas de fora do Python, o gerenciador <code class="docutils literal notranslate"><span class="pre">conda</span></code> serve para baixar e gerenciar tanto bibliotecas Python como de outras linguagens. O gerenciador <code class="docutils literal notranslate"><span class="pre">conda</span></code> também serve para gerenciar ambientes virtuais.</p>
+<p>A versão mais comumente usada do Anaconda é a individual, cujo uso é gratuito para uso não comercial.</p>
+<div class="admonition seealso" id="id1">
+<p class="admonition-title">Veja também</p>
+<p><a href="https://acervolima.com/como-atualizar-o-python-no-windows/" target="_blank">Nesta página</a>, você encontra mais informações e link para baixar a distribuição Anaconda.</p>
+</div>
+<div class="section" id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Baixe o instalador do Anaconda</p></li>
+<li><p>Siga os passos da instalação padrão com os botões <code class="docutils literal notranslate"><span class="pre">next</span></code></p></li>
+<li><p>A menos que você queira instalar para todos os usuários do seu computador, escolha a opcão <code class="docutils literal notranslate"><span class="pre">Just</span> <span class="pre">Me</span></code> (somente para mim)</p></li>
+<li><p>Selecione uma pasta onde será feita a instalação (ou deixe a pasta padr
+ão)</p></li>
+</ol>
+<div class="figure align-default" id="anaconda-folder">
+<a class="reference internal image-reference" href="content/img/anaconda_install_folder.png"><img alt="content/img/anaconda_install_folder.png" src="content/img/anaconda_install_folder.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Escolha de localização da instalação do Anaconda.</span><a class="headerlink" href="#anaconda-folder" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="simple">
+<li><p>Em seguida você tem a possibilidade de adicionar o Anaconda ao <code class="docutils literal notranslate"><span class="pre">PATH</span></code></p></li>
+</ol>
+<div class="figure align-default" id="anaconda-path">
+<a class="reference internal image-reference" href="content/img/anaconda_install_path.png"><img alt="content/img/anaconda_install_path.png" src="content/img/anaconda_install_path.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Opção de adição do Anaconda ao PATH.</span><a class="headerlink" href="#anaconda-path" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition danger" id="html-danger">
+<p class="admonition-title">Perigo!</p>
+<p>Como vimos em <strong>Interface de linha de comando</strong>, adicionar programas ao <code class="docutils literal notranslate"><span class="pre">PATH</span></code> tem vantagens, mas também pode incorrer em interferência em outros programas (porque você mexe em variáveis globais). Caso você não saiba as consequências disso, não marque esta opção. Neste caso, você poderá utlizar linha de comando com o <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">prompt</span></code>.</p>
+</div>
+<ol class="simple">
+<li><p>Escolha registrar o Anaconda como o Python padrão</p></li>
+<li><p>Clique em instalar</p></li>
+<li><p>Esta tela indica o final do processo de instalação. Caso vocês queriam ver o tutorial ou ler mais sobre o Anaconda, marquem as opções.</p></li>
+</ol>
+<div class="figure align-default" id="anaconda-ok">
+<a class="reference internal image-reference" href="content/img/anaconda_install_ok.png"><img alt="content/img/anaconda_install_ok.png" src="content/img/anaconda_install_ok.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Opção de adição do Anaconda ao PATH.</span><a class="headerlink" href="#anaconda-ok" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="simple">
+<li><p>Agora você pode acessar o Anaconda pela interface gráfica (Anaconda Navigator), procurando pelo menu ou digitando <code class="docutils literal notranslate"><span class="pre">⊞</span> <span class="pre">Win</span></code> + <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Navigator</span></code>.</p></li>
+</ol>
+<div class="figure align-default" id="navigator">
+<a class="reference internal image-reference" href="content/img/navigator.png"><img alt="content/img/navigator.png" src="content/img/navigator.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Opção de adição do Anaconda ao PATH.</span><a class="headerlink" href="#navigator" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip" id="html-tip">
+<p class="admonition-title">Dica</p>
+<p>Muitas distribuições Linux já vêm com o Python pré-instalado. Use o seguinte comando para verificar a versão instalada:</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+</div>
+<p>Caso você não tenha o Python instalado no seu computador, antes de começar a instalação, você precisa verificar se sua distribuição Linux tem os pré-requisitos necessários (provavalmente sua distribuição já tem esses pré-requisitos).</p>
+<div class="admonition seealso" id="id2">
+<p class="admonition-title">Veja também</p>
+<p>Veja <a href="https://acervolima.com/como-atualizar-o-python-no-windows/" target="_blank">aqui</a> os pré-requisitos conforme a sua distribuição Linux.</p>
+</div>
+<p>Procedimentos de instalação:</p>
+<ol class="simple">
+<li><p>Baixe o instalador do Anaconda</p></li>
+<li><p>Entre no terminal e digite o seguinte comando:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="o">~/</span><span class="n">Downloads</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">2021.11</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<div class="admonition note" id="html-admonition">
+<p class="admonition-title">Nota</p>
+<p>A versão disponível durante a escrita deste livro é a <code class="docutils literal notranslate"><span class="pre">Anaconda3-2021.11-Linux-x86_64.sh</span></code> (vide comando acima). Altere o nome do instalador no comando conforme haja novas versões.</p>
+</div>
+<div class="admonition note" id="id3">
+<p class="admonition-title">Nota</p>
+<p>Inclua <code class="docutils literal notranslate"><span class="pre">bash</span></code> independentemente de usar o Bash ou não. Se você baixou o instalador em outra pasta diferente de <code class="docutils literal notranslate"><span class="pre">~/Downloads/</span></code>, substitua com o endereço de onde o instalador se encontra.</p>
+</div>
+<ol class="simple">
+<li><p>Clique <code class="docutils literal notranslate"><span class="pre">↵</span> <span class="pre">Enter</span></code> nos termos de uso</p></li>
+<li><p>CLique <code class="docutils literal notranslate"><span class="pre">Yes</span></code> para concordar</p></li>
+<li><p>Aceite a pasta padrão ou altere a localização da instalação</p></li>
+<li><p>Clique em <code class="docutils literal notranslate"><span class="pre">Yes</span></code> na pergunta  <code class="docutils literal notranslate"><span class="pre">Do</span> <span class="pre">you</span> <span class="pre">wish</span> <span class="pre">the</span> <span class="pre">installer</span> <span class="pre">to</span> <span class="pre">initialize</span> <span class="pre">Anaconda3</span> <span class="pre">by</span> <span class="pre">running</span> <span class="pre">conda</span> <span class="pre">init?</span></code></p></li>
+<li><p>A instalação termina com a mensagem <code class="docutils literal notranslate"><span class="pre">Thank</span> <span class="pre">you</span> <span class="pre">for</span> <span class="pre">installing</span> <span class="pre">Anaconda</span> <span class="pre">3!</span></code></p></li>
+<li><p>Feche seu terminal, abra novamente e use o comando:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</pre></div>
+</div>
+<br></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="instalando-miniconda-e-miniforge">
+<h1>Instalando Miniconda e Miniforge<a class="headerlink" href="#instalando-miniconda-e-miniforge" title="Permalink to this headline">¶</a></h1>
+<p>A distribuição Anaconda não tem somente vantagens. Duas desvantagens principais ficam claras após usar o Anaconda por um período de tempo: tamanho de armazenamento ocupado e questões legais. No primeiro caso, conforme você for utilizando o Anaconda é provável que você use cada vez menos o Navigator, principalmente se seu uso for limitado a <em>notebooks</em> Jupyter e programas em <code class="docutils literal notranslate"><span class="pre">.py</span></code> (não se preocupe - veremos o que são ambos ainda nesta parte do livro).</p>
+<p>Por este motivo, o Anaconda ocupa um enorme espaço no seu computador sem benefício direto para você. O segundo motivo é que você está atrelado(a) a uma distribuição comercial - isto é, passível de mudanças e impedido de usar num contexto comercial sem pagar por uma versão empresarial. Caso você se encontre em um destes dois cenários (ou possivelmente ambos), duas potenciais soluções existem: as distribuições Miniconda e Miniforge.</p>
+<div class="admonition important" id="id4">
+<p class="admonition-title">Importante</p>
+<p>Estas duas distribuições, via de regra, vêm com os pacotes mínimos para o funcionamento do Python em linha de comando. Você precisará instalar manualmente as bibliotecas desejadas. Veremos mais adiante como fazer isto.</p>
+</div>
+<div class="admonition attention" id="html-attention">
+<p class="admonition-title">Atenção</p>
+<p>Se você já se sente confortável com linha de comando, em ambos os casos (Miniconda e Miniforge) vale a pena adicionar a instalação ao <code class="docutils literal notranslate"><span class="pre">PATH</span></code> para facilitar seu uso. Se não souber as consequências de adicionar ao <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, não o faça. Você pode adicionar futuramente caso mude de ideia.</p>
+</div>
+<div class="section" id="miniconda">
+<h2>Miniconda<a class="headerlink" href="#miniconda" title="Permalink to this headline">¶</a></h2>
+<p>A distribuição Miniconda é uma versão minimalista do Anaconda, em que são instalados o Python (que já vem com o gerenciador <code class="docutils literal notranslate"><span class="pre">pip</span></code>), o gerenciador <code class="docutils literal notranslate"><span class="pre">conda</span></code> e pouquíssimos pacotes que são necessários para esse arranjo mínimo funcionar.</p>
+<div class="admonition seealso" id="id5">
+<p class="admonition-title">Veja também</p>
+<p>Você encontra o instalador da última versão disponível do Miniconda <a hrf="https://docs.conda.io/en/latest/miniconda.html" target="_blank">no site oficial</a>.</p>
+</div>
+<div class="section" id="id6">
+<h3>Windows<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Baixe o instalador do site oficial</p></li>
+<li><p>Abra o instalador <code class="docutils literal notranslate"><span class="pre">.exe</span></code> e siga os passos</p></li>
+<li><p>Caso você tenha dúvida, deixe as opções padrões inalteradas</p></li>
+<li><p>Quando a instalação terminar, entre no <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">prompt</span></code> a partir do menu ou digitando  <code class="docutils literal notranslate"><span class="pre">⊞</span> <span class="pre">Win</span></code> + <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">prompt</span></code></p></li>
+<li><p>Teste sua instalação com os comandos:</p></li>
+</ol>
+<p>Ver a versão do Python instalada:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>Ver a lista de pacotes instalados pelo <code class="docutils literal notranslate"><span class="pre">conda</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="nb">list</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Linux<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Baixe o instalador do site oficial</p></li>
+<li><p>Abra seu terminal e digite:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Altere o código acima conforme o nome do instalador.</p>
+<br>
+</div>
+</div>
+<div class="section" id="miniforge">
+<h2>Miniforge<a class="headerlink" href="#miniforge" title="Permalink to this headline">¶</a></h2>
+<p>O Miniforge é muito semelhante ao Miniconda, com exceção de que não tem nenhuma ligação com a Continuum Analytics (empresa dona do Anaconda).</p>
+<div class="admonition important" id="id8">
+<p class="admonition-title">Importante</p>
+<p>A distribuição Miniforge tem suporte a baixar bibliotecas em paralelo</p>
+</div>
+<div class="admonition seealso" id="id9">
+<p class="admonition-title">Veja também</p>
+<p>Você encontra o instalador da última versão disponível do Miniforge <a hrf="https://github.com/conda-forge/miniforge" target="_blank">no site oficial</a>.</p>
+</div>
+<p>A instalação segue passos similares à instalação do Miniconda.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="instalando-o-python-diretamente">
+<h1>Instalando o Python diretamente<a class="headerlink" href="#instalando-o-python-diretamente" title="Permalink to this headline">¶</a></h1>
+<p>Caso você queria o maior grau de autonomia e flexibilidade possível, você deve isntalar o Python diretamente do site oficial.</p>
+<div class="admonition seealso" id="id10">
+<p class="admonition-title">Veja também</p>
+<p>Você encontra o instalador e instruções de instalação da Python <a hrf="https://docs.conda.io/en/latest/miniconda.html" target="_blank">no site oficial</a>.</p>
+</div>
+<div class="admonition tip" id="id11">
+<p class="admonition-title">Dica</p>
+<p>A implementação padrão do Python é a <code class="docutils literal notranslate"><span class="pre">CPython</span></code> (Python implementada em C, vide figura abaixo). No entanto, há outras implementações como a <code class="docutils literal notranslate"><span class="pre">Jython</span></code> (em Java) ou a <code class="docutils literal notranslate"><span class="pre">PyPy</span></code> (implementada em Python como base). Veja mais informações <a href="https://wiki.python.org/moin/PythonImplementations" target="_blank">aqui</a>.</p>
+</div>
+<div class="figure align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/cpython1.png"><img alt="../_images/cpython1.png" src="../_images/cpython1.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Funcionamento da implementação <code class="docutils literal notranslate"><span class="pre">CPython</span></code>. Fonte: <a class="reference external" href="https://www.c-sharpcorner.com/article/why-learn-python-an-introduction-to-python/#:~:text=CPython%20is%20the%20standard%20implementation,by%20the%20CPython%20Virtual%20Machine.">C# Corner</a></span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="material-complementar">
+<h1>Material complementar<a class="headerlink" href="#material-complementar" title="Permalink to this headline">¶</a></h1>
+<p>Caso você tenha dificuldade em instalar a distribuição Anaconda no Windows, veja o tutorial abaixo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;_eK0z5QbpKA&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="600"
+    height="300"
+    src="https://www.youtube.com/embed/_eK0z5QbpKA"
+    frameborder="0"
+    allowfullscreen
+
+></iframe>
+</div></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="linha_comando.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Interface de linha de comando</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../markdown.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Fellipe Martins & Leonardo Vils<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

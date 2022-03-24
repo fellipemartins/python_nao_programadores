@@ -104,13 +104,23 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="content/introducao.html">
+   Introdução
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="content/como_usar_livro.html">
    Como usar este livro
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="content/linha_comando.html">
-   Fundamentos de linha de comando
+   Interface de linha de comando
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/instalacao_python.html">
+   Instalando o Python
   </a>
  </li>
  <li class="toctree-l1">
@@ -228,6 +238,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-figuras">
+   MyST figuras
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#myst-table-formats">
    MyST table formats
   </a>
@@ -283,6 +298,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-figuras">
+   MyST figuras
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#myst-table-formats">
    MyST table formats
   </a>
@@ -318,7 +338,7 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="myst-cheatsheet">
 <h1>MyST cheatsheet<a class="headerlink" href="#myst-cheatsheet" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#id3"><span class="std std-ref">MyST syntax lecture</span></a></p>
+<p><a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a></p>
 <p><a class="reference external" href="https://jupyterbook.org/customize/config.html">https://jupyterbook.org/customize/config.html</a></p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-admonitions">
@@ -378,9 +398,19 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">Importante</p>
 <p>Este é o <em>conteúdo</em></p>
 </div>
-<div class="admonition seealso" id="id2">
+<div class="admonition seealso" id="html-seealso">
 <p class="admonition-title">Veja também</p>
 <p>Este é o <em>conteúdo</em></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="myst-figuras">
+<h1>MyST figuras<a class="headerlink" href="#myst-figuras" title="Permalink to this headline">¶</a></h1>
+<p>imagem normal:</p>
+<a class="reference internal image-reference" href="img/github_panel.png"><img alt="Painel do GitHub" class="align-center" src="img/github_panel.png" style="width: 200px;" /></a>
+<p>figuras (com referenciamento)</p>
+<div class="figure align-default" id="directive-fig">
+<a class="reference internal image-reference" href="img/github_panel.png"><img alt="img/github_panel.png" src="img/github_panel.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">Legenda da figura!</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-table-formats">
@@ -410,10 +440,10 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>MyST internal referencing<a class="headerlink" href="#myst-internal-referencing" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-cheat-sheet">
-<span id="id3"></span><h1>MyST Cheat Sheet<a class="headerlink" href="#myst-cheat-sheet" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#id3"><span class="std std-ref">MyST Cheat Sheet</span></a>
-<a class="reference internal" href="#id3"><span class="std std-ref">MyST syntax lecture</span></a>
-<a class="reference internal" href="#id3"><span class="std std-ref">MyST syntax lecture</span></a></p>
+<span id="id2"></span><h1>MyST Cheat Sheet<a class="headerlink" href="#myst-cheat-sheet" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#id2"><span class="std std-ref">MyST Cheat Sheet</span></a>
+<a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a>
+<a class="reference internal" href="#id2"><span class="std std-ref">MyST syntax lecture</span></a></p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="myst-panels">
 <h1>MyST panels<a class="headerlink" href="#myst-panels" title="Permalink to this headline">¶</a></h1>
