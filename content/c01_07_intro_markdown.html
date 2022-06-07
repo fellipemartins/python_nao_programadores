@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown &#8212; Análise de dados e estatística com Python para não programadores</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="Notebooks Jupyter" href="c01_06_notebooks.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Análise de dados e estatística com Python para não programadores</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Boas-vindas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparação
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_01_introducao.html">
+   Introdução
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_02_como_usar_livro.html">
+   Como usar este livro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_03_linha_comando.html">
+   Interface de linha de comando
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_04_instalacao_python.html">
+   Instalando o Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_05_instalando_bibliotecas.html">
+   Bibliotecas e módulos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_06_notebooks.html">
+   <em>
+    Notebooks
+   </em>
+   Jupyter
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Markdown
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programação em Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/c01_07_intro_markdown.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fcontent/c01_07_intro_markdown.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Markdown
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-titulos">
+     Criando títulos
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatando-texto">
+     Formatando texto
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formatacao-especifica-de-markdown">
+       Formatação específica de
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Markdown
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formatacao-especifica-em-html">
+       Formatação específica em
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         HTML
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatando-codigo">
+     Formatando código
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-listas">
+     Criando listas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-tabelas">
+     Criando tabelas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inserindo-expressoes-matematicas-com-latex">
+     Inserindo expressões matemáticas com
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Latex
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-links">
+     Criando links
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inserindo-imagens">
+     Inserindo imagens
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicios">
+   Exercícios
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#para-saber-mais">
+   Para saber mais
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Markdown</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Markdown
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-titulos">
+     Criando títulos
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatando-texto">
+     Formatando texto
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formatacao-especifica-de-markdown">
+       Formatação específica de
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Markdown
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#formatacao-especifica-em-html">
+       Formatação específica em
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         HTML
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatando-codigo">
+     Formatando código
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-listas">
+     Criando listas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-tabelas">
+     Criando tabelas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inserindo-expressoes-matematicas-com-latex">
+     Inserindo expressões matemáticas com
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Latex
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-links">
+     Criando links
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inserindo-imagens">
+     Inserindo imagens
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicios">
+   Exercícios
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#para-saber-mais">
+   Para saber mais
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="markdown">
+<h1>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
+<p>Como vimos anteriormente, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é a principal forma de se agregar valor a um <em>notebook</em>. Nesta seção veremos com detalhes como utilizar Markdown em <em>notebooks</em> Jupyter. <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, no entanto, tem diversas aplicações além de criar notebooks - por exemplo, páginas iniciais de repositórios Github são criados em <code class="docutils literal notranslate"><span class="pre">.md</span></code> (a extensão de <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>). Este livro é outro exemplo, já que foi criado com um misto de <em>notebooks</em> Jupyter (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) e Markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>).</p>
+<div class="admonition note" id="html-admonition">
+<p class="admonition-title">Nota</p>
+<p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é uma linguagem de marcação (<em>markup language</em>) leve que adiciona elementos de formatação a textos.  Além disto, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> permite de forma simples o acréscimo de elementos visuais ao texto (figuras, tabelas, vídeos, etc.).</p>
+</div>
+<p>Com certeza você tem contato diário com linguagens de marcação - mesmo sem saber. A maioria das páginas de internet é construída com <code class="docutils literal notranslate"><span class="pre">HTML</span></code> (<em>hypertext markup language</em>), a linguagem de marcação nais conhecida atualmente. Vamos comparar <code class="docutils literal notranslate"><span class="pre">HTML</span></code> com Markdown para a criação de um parágrafo simples:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fellipemartins.github.io/python_nao_programadores/intro.html&quot;</span><span class="p">&gt;</span>Neste link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> você encontra a página inicial deste livro.
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Este bloco de código cria um título (o texto entre os marcadores <code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> e <code class="docutils literal notranslate"><span class="pre">&lt;/h1&gt;</span></code>), um parágrafo (de <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code> a <code class="docutils literal notranslate"><span class="pre">&lt;/p&gt;</span></code>) e um link (<code class="docutils literal notranslate"><span class="pre">&lt;a</span> <span class="pre">href=&quot;....&quot;&gt;</span></code> a <code class="docutils literal notranslate"><span class="pre">&lt;/a&gt;</span></code>)</p>
+<p>Agora, vamos fazer o mesmo em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Título</span>
+
+[<span class="nt">Neste link</span>](<span class="na">https://fellipemartins.github.io/python_nao_programadores/intro.html</span>) você encontra a página inicial deste livro.
+</pre></div>
+</div>
+<p>Como você pôde observar, o mesmo objetivo pôde ser cumprido tanto com <code class="docutils literal notranslate"><span class="pre">HTML</span></code> quanto com <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>. Contudo, com <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é bastante mais simples, já que <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> tem o propósito de facilitar o desenvolvimento de formatação e adição de elementos em uma página de forma mais intuitiva. O motivo para compararmos com <code class="docutils literal notranslate"><span class="pre">HTML</span></code> é que, na verdade, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é um superconjunto de <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. Veja a figura abaixo:</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/markdown.png"><img alt="../_images/markdown.png" src="../_images/markdown.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Funcionamento do Markdown (simplificado) - Adaptado de <a class="reference external" href="https://www.markdownguide.org/getting-started/">markdownguide.org</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>De forma simples, a formatação em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é levada a um aplicativo que converte a formatação para <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, cujo resultado final é mostrado (a página como vemos). Assim, com <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é possível desviar de ter que criar códigos com todo o detalhamento requerido pelos protocolos <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. Por outro lado, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é limitado e, em muitas situações, você terá que utilizar <code class="docutils literal notranslate"><span class="pre">HTML</span></code> padrão para obter os resultados desejados. No fim, você pode utilizar somente código em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, em <code class="docutils literal notranslate"><span class="pre">HTML</span></code> ou uma mistura de ambos - que é o cenário mais provável caso você queria fazer um <em>notebook</em> mais bonito sem ter que se tornar um <em>designer</em> <code class="docutils literal notranslate"><span class="pre">HTML</span></code> pleno.</p>
+<div class="admonition seealso" id="html-seealso">
+<p class="admonition-title">Veja também</p>
+<p>Para ver mais usos e aplicações de <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, <a class="reference external" href="https://www.markdownguide.org/getting-started/">esta página</a> contém muitas informações úteis.</p>
+</div>
+<div class="admonition tip" id="html-tip">
+<p class="admonition-title">Dica</p>
+<p>Para usar <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> em uma célula em um <em>notebook</em> Jupyter, basta clicar na célula e mudar no menu de <code class="docutils literal notranslate"><span class="pre">Code</span></code> para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>. Alternativamente, você pode navegar até a célula desejada usando <code class="docutils literal notranslate"><span class="pre">esc</span></code> e setas e apertar <code class="docutils literal notranslate"><span class="pre">M</span></code>. Na seção <em><strong>Notebooks</strong></em> <strong>Jupyter</strong>, você encontra mais atalhos úteis.</p>
+</div>
+<div class="section" id="criando-titulos">
+<h2>Criando títulos<a class="headerlink" href="#criando-titulos" title="Permalink to this headline">¶</a></h2>
+<p>Para adicionar títulos a uma célula, você utilizará o marcador cerquilha (<code class="docutils literal notranslate"><span class="pre">#</span></code>), equivalente ao <code class="docutils literal notranslate"><span class="pre">H</span></code> em <code class="docutils literal notranslate"><span class="pre">HTML</span></code>.</p>
+<div class="admonition tip" id="id2">
+<p class="admonition-title">Dica</p>
+<p>A lógica de tamanho dos títulos é do maior para o menor, tanto em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> quanto <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. A diferença é que em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> para cada nível menor, você acrescenta um asterisco (<code class="docutils literal notranslate"><span class="pre">#</span></code> = <code class="docutils literal notranslate"><span class="pre">H1</span></code>, <code class="docutils literal notranslate"><span class="pre">##</span></code> = <code class="docutils literal notranslate"><span class="pre">H2</span></code>, etc.).</p>
+</div>
+<br>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">HTML</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">#</span></code> Título</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;H1&gt;</span></code> Título <code class="docutils literal notranslate"><span class="pre">&lt;/H1&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">##</span></code> Título</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;H2&gt;</span></code> Título <code class="docutils literal notranslate"><span class="pre">&lt;/H2&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">###</span></code> Título</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;H3&gt;</span></code> Título <code class="docutils literal notranslate"><span class="pre">&lt;/H3&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">####</span></code> Título</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;H4&gt;</span></code> Título <code class="docutils literal notranslate"><span class="pre">&lt;/H4&gt;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="formatando-texto">
+<h2>Formatando texto<a class="headerlink" href="#formatando-texto" title="Permalink to this headline">¶</a></h2>
+<p>O texto em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é geralmente feito em <code class="docutils literal notranslate"><span class="pre">Unicode</span></code>. <code class="docutils literal notranslate"><span class="pre">Unicode</span></code> é um padrão internacional de codificação de texto que inclui praticamente todos as formas de escrita em línguas modernas, muitas línguas antigas e arcaicas (incluindo centenas de alfabetos e sistemas não alfabéticos) bem como <code class="docutils literal notranslate"><span class="pre">emoji</span></code>.</p>
+<div class="admonition seealso" id="id3">
+<p class="admonition-title">Veja também</p>
+<p>Para conhecer mais sobre o padrão <code class="docutils literal notranslate"><span class="pre">Unicode</span></code>, veja a <a class="reference external" href="https://home.unicode.org/">página oficial</a>.</p>
+</div>
+<p>Para texto normal, basta escrever normalmente - isto inclui o uso de <code class="docutils literal notranslate"><span class="pre">emoji</span></code>.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Este emoji representa alguém ao computador: 👨🏻‍💻.
+</pre></div>
+</div>
+<p><strong>Resultado:</strong>
+Este emoji representa alguém ao computador: 👨🏻‍💻.</p>
+<div class="admonition seealso" id="id4">
+<p class="admonition-title">Veja também</p>
+<p>Qualquer <code class="docutils literal notranslate"><span class="pre">emoji</span></code> em formato <code class="docutils literal notranslate"><span class="pre">Unicode</span></code> será aceito pelo <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>. Há diversos sites onde você pode encontrá-los (basta buscar por <em>emoji unicode</em>). Uma sugestão é <a class="reference external" href="https://getemoji.com/">este site</a>, que nós já usamos frequentemente.</p>
+</div>
+<div class="section" id="formatacao-especifica-de-markdown">
+<h3>Formatação específica de <code class="docutils literal notranslate"><span class="pre">Markdown</span></code><a class="headerlink" href="#formatacao-especifica-de-markdown" title="Permalink to this headline">¶</a></h3>
+<p>Para adicionar formatação ao texto, veja a tabela abaixo e os exemplos em seguida. Perceba que necessariamente os marcadores (<code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code>, <code>`</code> ou <code class="docutils literal notranslate"><span class="pre">~~</span></code>) tem que estar diretamente ligados ao início e fim do trecho formatado, mesmo que haja espaços em branco no meio.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Formatação</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Itálico</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">*palavra*</span></code> ou <code class="docutils literal notranslate"><span class="pre">_palavra_</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Negrito</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">**palavra**</span></code> ou <code class="docutils literal notranslate"><span class="pre">__palavra__</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Itálico + negrito</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">***palavra***</span></code> ou <code class="docutils literal notranslate"><span class="pre">___palavra___</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Linha</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">***</span></code>, <code class="docutils literal notranslate"><span class="pre">---</span></code> ou <code class="docutils literal notranslate"><span class="pre">___</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplos</strong>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>O artigo encontrado <span class="gs">**nesta página**</span> pode ser útil.
+O termo em inglês <span class="ge">*feature*</span> é tradicionalmente traduzido por variável.
+A variável ano recebe um valor ***numérico discreto*** (números inteiros).
+***
+</pre></div>
+</div>
+<p><strong>Resultado</strong>: <br>
+O artigo encontrado <strong>nesta página</strong> pode ser útil. <br>
+O termo em inglês <em>feature</em> é tradicionalmente traduzido por variável. <br>
+A variável ano recebe um valor <em><strong>numérico discreto</strong></em> (números inteiros).</p>
+<hr class="docutils" />
+<p>Você pode criar blocos separados de texto (para citações, ênfase, etc.) usando <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>:</p>
+<p><strong>Exemplos</strong>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">**&quot;Capacidade não serve de nada sem oportunidade&quot;** (Napoleão Bonaparte)</span>
+</pre></div>
+</div>
+<p><strong>Resultado</strong>: <br></p>
+<blockquote>
+<div><p><strong>“Capacidade não serve de nada sem oportunidade”</strong> (Napoleão Bonaparte)</p>
+</div></blockquote>
+<br> 
+</div>
+<div class="section" id="formatacao-especifica-em-html">
+<h3>Formatação específica em <code class="docutils literal notranslate"><span class="pre">HTML</span></code><a class="headerlink" href="#formatacao-especifica-em-html" title="Permalink to this headline">¶</a></h3>
+<p>Para outras formatações, você terá que usar <code class="docutils literal notranslate"><span class="pre">HTML</span></code>:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Formatação</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">HTML</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Cor</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">&lt;font</span> <span class="pre">color=#000000&gt;</span> <span class="pre">palavra</span> <span class="pre">&lt;/font&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Sublinhado</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">&lt;u&gt;</span> <span class="pre">palavra</span> <span class="pre">&lt;/u&gt;</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Taxado*</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">&lt;s&gt;</span> <span class="pre">palavra</span> <span class="pre">&lt;/s&gt;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Quebra de linha</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><em>*Taxado em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é tradicionalmente escrito <code class="docutils literal notranslate"><span class="pre">~~palavra~~</span></code>, mas alguns navegadores / IDEs não reconhecem.</em></p>
+<p><strong>Exemplos</strong>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>O resultado deste ano foi <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;#DC143C&quot;</span><span class="p">&gt;</span>-67%<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span> em comparação à <span class="p">&lt;</span><span class="nt">u</span><span class="p">&gt;</span>década inteira anterior<span class="p">&lt;/</span><span class="nt">u</span><span class="p">&gt;</span>.  <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+A <span class="p">&lt;</span><span class="nt">s</span><span class="p">&gt;</span>feature<span class="p">&lt;/</span><span class="nt">s</span><span class="p">&gt;</span> variável tem efeito significante no modelo.
+</pre></div>
+</div>
+<p><strong>Resultado</strong>: <br>
+O resultado deste ano foi <font color="#DC143C">-67%</font> em comparação à <u>década inteira anterior</u>. <br>
+A <s>feature</s> variável tem efeito significante no modelo.</p>
+<div class="admonition seealso" id="id5">
+<p class="admonition-title">Veja também</p>
+<p>Para por uma cor específica em uma fonte, em <code class="docutils literal notranslate"><span class="pre">HTML</span></code> você pode usar nomes em inglês (<em>Red</em>) ou números hexadecimais (#FF0000). Veja uma tabela com opções de cores por nomes ou número hexadecimais, organizado por cores, <a href="https://htmlcolorcodes.com/color-names/" target="_blank"> neste site </a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="formatando-codigo">
+<h2>Formatando código<a class="headerlink" href="#formatando-codigo" title="Permalink to this headline">¶</a></h2>
+<p>Um <em>notebook</em> Jupyter permite alternar entre células contendo código e conteúdo em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>. No entanto, há situações em que pode ser necessário escrever código dentro de células <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> (por motivos pedagógicos, instrucionais ou de reprodutibilidade, por exemplo).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Formatação</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">Markdwon</span></code> ou <code class="docutils literal notranslate"><span class="pre">HTML</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Código</p></td>
+<td class="text-align:left"><p><code>`palavra`</code> ou <code class="docutils literal notranslate"><span class="pre">&lt;code&gt;</span> <span class="pre">palavra</span> <span class="pre">&lt;/code&gt;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplo</strong>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>A variável <span class="sb">`ID`</span> recebe um número inteiro enquanto a variável <span class="sb">`Name`</span> recebe texto.
+</pre></div>
+</div>
+<p><strong>Resultado</strong>: <br>
+A variável <code class="docutils literal notranslate"><span class="pre">ID</span></code> recebe um número inteiro enquanto a variável <code class="docutils literal notranslate"><span class="pre">Name</span></code> recebe texto.</p>
+<p>Estas formas acima são úteis para pequenos trechos de código, mas sem marcação de sintaxe por cores. Para trechos mais longos de código, você pode usar ambos, mas em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> há duas formas - com ou sem marcação de sintaxe. Em ambas as formas você deverá incluir o código entre <code>```</code> … <code>```</code> . No entanto, caso queira marcação de sintaxe por cor, adicione a linguagem diretamente ligado ao primeiro <code>```</code> (em letras minúsculas; <code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">markdown</span></code>, <code class="docutils literal notranslate"><span class="pre">python</span></code>, etc.).</p>
+<p><strong>Exemplos</strong>:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Sem marcação de sintaxe:
+<span class="sb">```</span>
+<span class="sb">a = 2</span>
+<span class="sb">if a &gt; 1.5 :</span>
+<span class="sb">    print(&quot; it is &gt; 1.5 &quot; )</span>
+<span class="sb">```</span>
+
+Com marcação de sintaxe:
+<span class="sb">```python</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mf">1.5</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; it is &gt; 1.5 &quot;</span> <span class="p">)</span>
+<span class="sb">```</span>
+</pre></div>
+</div>
+<p><strong>Resultado</strong>: <br>
+Sem marcação de sintaxe</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>a = 2
+if a &gt; 1.5 :
+    print(&quot; it is &gt; 1.5 &quot; )
+</pre></div>
+</div>
+<p>Com marcação de sintaxe:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mf">1.5</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; it is &gt; 1.5 &quot;</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="criando-listas">
+<h2>Criando listas<a class="headerlink" href="#criando-listas" title="Permalink to this headline">¶</a></h2>
+<p>Para criar listas, você pode usar os marcadores <code class="docutils literal notranslate"><span class="pre">*</span></code> e <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
+<div class="admonition attention" id="html-attention">
+<p class="admonition-title">Atenção</p>
+<p>Para criar listas, deve haver um espaço em branco entre o marcador (<code class="docutils literal notranslate"><span class="pre">*</span></code>/<code class="docutils literal notranslate"><span class="pre">-</span></code>) e a palavra seguinte. No caso do marcador <code class="docutils literal notranslate"><span class="pre">*</span></code>, quando diretamente ligado à palavra seguinte, impõe formatação <em>itálica</em> à palavra (veja mais no tópico <strong>Formatando texto</strong>).</p>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">*</span> Carne
+<span class="k">*</span> Queijo
+<span class="k">*</span> Calabresa
+</pre></div>
+</div>
+<p>Para criar subníveis em uma lista, use espaçamento (<code class="docutils literal notranslate"><span class="pre">tab</span></code>):</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">*</span> Esfirras:
+  <span class="k">*</span> Carne
+  <span class="k">*</span> Queijo
+  <span class="k">*</span> Calabresa
+    <span class="k">*</span> pura
+    <span class="k">*</span> com queijo
+</pre></div>
+</div>
+<p>Resultado:</p>
+<ul class="simple">
+<li><p>Esfirras:</p>
+<ul>
+<li><p>Carne</p></li>
+<li><p>Queijo</p></li>
+<li><p>Calabresa</p>
+<ul>
+<li><p>pura</p></li>
+<li><p>com queijo</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Perceba que a formatação de níveis é feita de forma automática.</p>
+<p>Você também pode criar listas numéricas (use o número seguido de ponto, por exemplo, <code class="docutils literal notranslate"><span class="pre">1.</span></code>, <code class="docutils literal notranslate"><span class="pre">2.</span></code>, etc):</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">1.</span> Abertura
+<span class="k">2.</span> Desenvolvimento
+    <span class="k">1.</span> Argumentos
+    <span class="k">2.</span> Contra-argumentos
+<span class="k">3.</span> Fechamento
+</pre></div>
+</div>
+<p><strong>Resultado:</strong></p>
+<ol class="simple">
+<li><p>Abertura</p></li>
+<li><p>Desenvolvimento</p>
+<ol class="simple">
+<li><p>Argumentos</p></li>
+<li><p>Contra-argumentos</p></li>
+</ol>
+</li>
+<li><p>Fechamento</p></li>
+</ol>
+<p>Você também pode criar listas de tarefas usando <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span></code> ou <code class="docutils literal notranslate"><span class="pre">-[x]</span></code>:</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">- [x]</span> Desenvolvimento
+<span class="k">- [ ]</span> Teste
+<span class="k">- [ ]</span> Relatório 
+</pre></div>
+</div>
+<p><strong>Resultado:</strong></p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Desenvolvimento</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Teste</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Relatório</p></li>
+</ul>
+</div>
+<div class="section" id="criando-tabelas">
+<h2>Criando tabelas<a class="headerlink" href="#criando-tabelas" title="Permalink to this headline">¶</a></h2>
+<p>A criacão de tabelas em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é relativamente simples. As colunas são criadas separando-se por <code class="docutils literal notranslate"><span class="pre">|</span></code>.  Separa-se a linha dos títulos do conteúdo da tabela por <code class="docutils literal notranslate"><span class="pre">--</span></code> (pelo menos dois <code class="docutils literal notranslate"><span class="pre">-</span></code> mas você pode adicionar mais, para organização do seu código).</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>| Estado | Capital        | Pop. (mi.)|
+| ------ | -------------- | --------- |
+| SP     | São Paulo      | 11.3      |
+| MG     | Belo Horizonte | 4.5       |
+</pre></div>
+</div>
+<p><strong>Resultado:</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Estado</p></th>
+<th class="head"><p>Capital</p></th>
+<th class="head"><p>Pop. (mi.)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SP</p></td>
+<td><p>São Paulo</p></td>
+<td><p>11.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>MG</p></td>
+<td><p>Belo Horizonte</p></td>
+<td><p>4.5</p></td>
+</tr>
+</tbody>
+</table>
+<p>Para adicionar alinhamento às células da sua tabela, use <code class="docutils literal notranslate"><span class="pre">:--</span></code> para alinhar à esquerda, <code class="docutils literal notranslate"><span class="pre">:--:</span></code> para centralizar e <code class="docutils literal notranslate"><span class="pre">--:</span></code> para alinhar à direita:</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>| Estado | Capital        | Pop. (mi.)|
+| -----: | :------------: | :-------- |
+| SP     | São Paulo      | 11.3      |
+| MG     | Belo Horizonte | 4.5       |
+</pre></div>
+</div>
+<p><strong>Resultado:</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:right head"><p>Estado</p></th>
+<th class="text-align:center head"><p>Capital</p></th>
+<th class="text-align:left head"><p>Pop. (mi.)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:right"><p>SP</p></td>
+<td class="text-align:center"><p>São Paulo</p></td>
+<td class="text-align:left"><p>11.3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:right"><p>MG</p></td>
+<td class="text-align:center"><p>Belo Horizonte</p></td>
+<td class="text-align:left"><p>4.5</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition error" id="html-error">
+<p class="admonition-title">Erro</p>
+<p>Nem todos os IDEs / navegadores renderizam alinhamento de tabelas em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> corretamente. Por exemplo, a biblioteca <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">boook</span></code> (que usamos para criar este livro), não alinha corretamente. No entanto, em um <em>notebook</em> Jupyter (incluindo Jupyter Lab) e IDEs como VSCode, funciona normalmente.</p>
+</div>
+</div>
+<div class="section" id="inserindo-expressoes-matematicas-com-latex">
+<h2>Inserindo expressões matemáticas com <code class="docutils literal notranslate"><span class="pre">Latex</span></code><a class="headerlink" href="#inserindo-expressoes-matematicas-com-latex" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code> não tem suporte proóprio para expressões matemáticas, mas permite que você utilize outra linguagem de marcação para isto - a <code class="docutils literal notranslate"><span class="pre">Latex</span></code>. <code class="docutils literal notranslate"><span class="pre">Latex</span></code> é uma linguagem de marcação muito utilizada na academia, particularmente adotada em ciências exatas e engenharias. Neste tópico vamos ver uma introdução à escrita de expressões matemáticas com <code class="docutils literal notranslate"><span class="pre">Latex</span></code>.</p>
+<p>Para inserir uma expressão matemática, use o marcador <code class="docutils literal notranslate"><span class="pre">$</span></code> no início e fim da expressão.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>$a = 10$
+</pre></div>
+</div>
+<p><strong>Resultado:</strong><br>
+<span class="math notranslate nohighlight">\(a = 10\)</span></p>
+<p>Abaixo se encontram os símbolos matemáticos mais comuns (além dos já encontrados no teclado):</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Símbolo</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">Latex</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>multiplicação</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\times</span></code> (<span class="math notranslate nohighlight">\(x\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>divisão</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\div</span></code> (<span class="math notranslate nohighlight">\(\div\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>diferente de</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\neq</span></code> (<span class="math notranslate nohighlight">\(\neq\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>menor ou igual a</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\leq</span></code> (<span class="math notranslate nohighlight">\(\leq\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>maior ou igual a</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\geq</span></code> (<span class="math notranslate nohighlight">\(\geq\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>aproximado a</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\simeq</span></code> (<span class="math notranslate nohighlight">\(\simeq\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+<br>
+Para inserir letras gregas, use o nome delas em inglês:
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Símbolo</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">Latex</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>alfa</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\alpha</span></code> (<span class="math notranslate nohighlight">\(\alpha\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>beta</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\beta</span></code> (<span class="math notranslate nohighlight">\(\beta\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>gama</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\gamma</span></code> (<span class="math notranslate nohighlight">\(\gamma\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>…</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(...\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>ômega</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\omega</span></code> (<span class="math notranslate nohighlight">\(\omega\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+<br>
+Subscritos e sobrescritos:
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Símbolo</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">Latex</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>sobrescrito</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">a^{b^{4+c}}</span></code> (<span class="math notranslate nohighlight">\(a^{b^{4+c}}\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>subscrito</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">a_{b_{4+c}}</span></code> (<span class="math notranslate nohighlight">\(a_{b_{4+c}}\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>somatório</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\sum_{i=1}^{n+4}\alpha</span></code> (<span class="math notranslate nohighlight">\(\sum_{i=1}^{n+4}\alpha\)</span>) <br> <code class="docutils literal notranslate"><span class="pre">\sum\limits_{i=1}^{n+4}\alpha</span></code> (<span class="math notranslate nohighlight">\(\sum\limits_{i=1}^{n+4}\alpha\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>produtório</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\prod_{i=1}^{n+4}\alpha</span></code> (<span class="math notranslate nohighlight">\(\prod_{i=1}^{n+4}\alpha\)</span>) <br> <code class="docutils literal notranslate"><span class="pre">\prod\limits_{i=1}^{n+4}\alpha</span></code> (<span class="math notranslate nohighlight">\(\prod\limits_{i=1}^{n+4}\alpha\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+<br>
+Frações, raízes, chaves, etc.
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Símbolo</p></th>
+<th class="text-align:left head"><p><code class="docutils literal notranslate"><span class="pre">Latex</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>fração</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\frac{4}{n}</span></code> (<span class="math notranslate nohighlight">\(\frac{4}{n}\)</span>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>chaves</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\{5</span> <span class="pre">-</span> <span class="pre">4</span> <span class="pre">-</span> <span class="pre">...</span> <span class="pre">-</span> <span class="pre">n</span> <span class="pre">\}</span></code> (<span class="math notranslate nohighlight">\(\{5 - 4 - ... - n \}\)</span>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>raiz</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\sqrt{4}</span></code> (<span class="math notranslate nohighlight">\(\sqrt{4}\)</span>) <br> <code class="docutils literal notranslate"><span class="pre">\sqrt[3]{x</span> <span class="pre">+</span> <span class="pre">1}</span></code> (<span class="math notranslate nohighlight">\(\sqrt[3]{x + 1}\)</span>)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso" id="id6">
+<p class="admonition-title">Veja também</p>
+<p>Você pode aprender mais sobre a linguagem <code class="docutils literal notranslate"><span class="pre">Latex</span></code> por meio do <a class="reference external" href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">tutorial do Overleaf</a> (um software para escrever código em <code class="docutils literal notranslate"><span class="pre">Latex</span></code> e gerar documentos a partir do código). Dica: o nome <code class="docutils literal notranslate"><span class="pre">Latex</span></code> vem do grego e se pronuncia <em>“látec”</em> e não <em>“látecs”</em>.</p>
+</div>
+</div>
+<div class="section" id="criando-links">
+<h2>Criando links<a class="headerlink" href="#criando-links" title="Permalink to this headline">¶</a></h2>
+<p>Um <em>link</em> é uma ligação entre a um local (uma página ou parte de uma página) e outro (outra página ou outra parte de uma página, por exemplo). Por este motivo, um link precisa ter uma <em>âncora</em> (onde clicar) e uma <em>referência de hipertexto</em> (o alvo onde você quer chegar). Por este motivo, um link em <code class="docutils literal notranslate"><span class="pre">HTML</span></code> se escreve da seguinte maneira:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ao clicar em <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;www.google.com&quot;</span><span class="p">&gt;</span>Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>, você irá para o site do Google.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Resultado:</strong>
+Ao clicar em <a href="http://www.google.com">Google</a>, você irá para o site do Google.</p>
+<p>Neste caso, a <em>âncora</em> ( <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> … <code class="docutils literal notranslate"><span class="pre">&lt;/a&gt;</span></code>) indica qual parte do texto será clicável. A <em>referência</em> (<code class="docutils literal notranslate"><span class="pre">href=&quot;...&quot;</span></code>) indica o endereço aonde você quer chegar.</p>
+<p>Em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> este processo é simplificado em que a <em>âncora</em> (texto clicável) é um par de colchetes <code class="docutils literal notranslate"><span class="pre">[...]</span></code> ligado a um par de parênteses <code class="docutils literal notranslate"><span class="pre">(...)</span></code> que faz a referência (endereço):</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Ao clicar em [<span class="nt">Google</span>](<span class="na">http://www.google.com</span>), você irá para o site do Google.
+</pre></div>
+</div>
+<p><strong>Resultado:</strong>
+Ao clicar em <a class="reference external" href="http://www.google.com">Google</a>, você irá para o site do Google.</p>
+<p>Apesar de ser mais simples fazer links em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> que em <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, há situações em que pode ser importante saber como fazer links em <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. Um exemplo é criar um link que seja aberto numa nova aba / página separada. Veja que adicionamos um marcador <code class="docutils literal notranslate"><span class="pre">target=&quot;...&quot;</span></code> à âncora <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ao clicar em <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;http://www.google.com&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>, você irá para o site do Google.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Resultado:</strong>
+Ao clicar em <a href="http://www.google.com" target="_blank">Google</a>, você irá para o site do Google.</p>
+</div>
+<div class="section" id="inserindo-imagens">
+<h2>Inserindo imagens<a class="headerlink" href="#inserindo-imagens" title="Permalink to this headline">¶</a></h2>
+<p>Inserir imagens é muito semelhante à lógica de inserção de links do item anterior. Você pode fazer tanto nativamente em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> como usando <code class="docutils literal notranslate"><span class="pre">HTML</span></code>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">HTML</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">![texto](localização)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;localização&quot;&gt;</span> <span class="pre">texto</span> <span class="pre">&lt;/img&gt;</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>O texto, nesse caso, é opcional.</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>![](img/logo.png)
+</pre></div>
+</div>
+<p><strong>Resultado:</strong><br />
+<img alt="" src="../_images/logo.png" /></p>
+<p>O uso do <code class="docutils literal notranslate"><span class="pre">HTML</span></code> para imagens se justifica porque, ao contrário do <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, com <code class="docutils literal notranslate"><span class="pre">HTML</span></code> você consegue delimitar tamanho (<code class="docutils literal notranslate"><span class="pre">width=</span></code>), entre outros aspectos:</p>
+<p><strong>Exemplo:</strong></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/logo.png&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">100</span><span class="p">&gt;&lt;/</span><span class="nt">img</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Resultado:</strong><br />
+<a class="reference internal" href="../_images/logo.png"><img alt="../_images/logo.png" src="../_images/logo.png" style="width: 100px;" /></a></img></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="exercicios">
+<h1>Exercícios<a class="headerlink" href="#exercicios" title="Permalink to this headline">¶</a></h1>
+<p><strong>Exercício 2:</strong> Crie uma célula em um <em>notebook</em> Jupyter contendo: 1) um título; 2) Um bloco de texto contendo um <code class="docutils literal notranslate"><span class="pre">emoji</span></code>; e 3) um bloco de código (você pode reutilizar os códigos desta seção para treinar)</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<em>Clique no botão para revelar um exemplo de solução.</em><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Título da célula</span>
+Esta <span class="gs">**célula**</span> foi feita em <span class="sb">`Markdown`</span>. <span class="sb">`Markdown`</span> é <span class="ge">*frequentemente*</span> mais fácil que aprender <span class="sb">`HTML`</span>.
+A melhor forma de conhecer mais sobre <span class="sb">`Markdown`</span> é ir testando o tempo todo!
+</pre></div>
+</div>
+</div>
+</details><p><strong>Exercício 3:</strong> Crie uma célula em um <em>notebook</em> Jupyter contendo: 1) texto em cores; 2) sublinhado e taxado; 3) quebra de linha.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<em>Clique no botão para revelar um exemplo de solução.</em><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>&lt;font color=&quot;Darkgreen&quot;&gt;Bons resultados&lt;/font&gt; &lt;s&gt;geralmente&lt;/s&gt; indicam &lt;u&gt;melhoria&lt;/u&gt;... &lt;br&gt;
+...mas não necessariamente.
+</pre></div>
+</div>
+</div>
+</details><p><strong>Exercício 4:</strong> Crie uma célula em um <em>notebook</em> Jupyter contendo uma tabela com texto, link e uma expressão matemática em <code class="docutils literal notranslate"><span class="pre">Latex</span></code>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<em>Clique no botão para revelar um exemplo de solução.</em><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>| Título 1                        | Título 2       |
+| ------------------------------- | -------------- |
+| [<span class="nt">Google</span>](<span class="na">http://www.google.com</span>) | $\sqrt{4} = 2$ | 
+</pre></div>
+</div>
+</div>
+</details><br></div>
+<div class="tex2jax_ignore mathjax_ignore section" id="para-saber-mais">
+<h1>Para saber mais<a class="headerlink" href="#para-saber-mais" title="Permalink to this headline">¶</a></h1>
+<p>Wikibook Latex
+<a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX">https://en.wikibooks.org/wiki/LaTeX</a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="c01_06_notebooks.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><em>Notebooks</em> Jupyter</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="notebooks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Content with notebooks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Fellipe Martins & Leonardo Vils<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

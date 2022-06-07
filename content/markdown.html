@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown Files &#8212; Análise de dados e estatística com Python para não programadores</title>
+    <title>Markdown &#8212; Análise de dados e estatística com Python para não programadores</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,6 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Bibliotecas e módulos" href="instalando_bibliotecas.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -102,7 +103,7 @@ const thebe_selector_output = ".output, .cell_output"
   Preparação
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="introducao.html">
    Introdução
@@ -124,20 +125,17 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../markdown.html">
-   Markdown Files
+  <a class="reference internal" href="instalando_bibliotecas.html">
+   Bibliotecas e módulos
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Programação em Python
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../notebooks.html">
-   Content with notebooks
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Markdown
+    </span>
+   </code>
   </a>
  </li>
 </ul>
@@ -181,9 +179,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/markdown.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/markdown.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -227,37 +225,56 @@ const thebe_selector_output = ".output, .cell_output"
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Markdown
+    </span>
+   </code>
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-roles-and-directives">
-   What are roles and directives?
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-directive">
-     Using a directive
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-titulos">
+     Criando títulos
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-role">
-     Using a role
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-listas">
+     Criando listas
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-a-citation">
-     Adding a citation
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-links-rever-html">
+     Criando links -
+     <strong>
+      REVER HTML
+     </strong>
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">
-     Executing code in your markdown files
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#resultado">
+       Resultado:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Resultado:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Resultado:
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#para-saber-mais">
+   Para saber mais
+  </a>
  </li>
 </ul>
 
@@ -269,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Markdown Files</h1>
+                <h1>Markdown</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -279,37 +296,56 @@ const thebe_selector_output = ".output, .cell_output"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Markdown
+    </span>
+   </code>
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-roles-and-directives">
-   What are roles and directives?
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-directive">
-     Using a directive
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-titulos">
+     Criando títulos
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-role">
-     Using a role
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-listas">
+     Criando listas
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-a-citation">
-     Adding a citation
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-links-rever-html">
+     Criando links -
+     <strong>
+      REVER HTML
+     </strong>
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">
-     Executing code in your markdown files
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#resultado">
+       Resultado:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Resultado:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Resultado:
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#para-saber-mais">
+   Para saber mais
+  </a>
  </li>
 </ul>
 
@@ -320,113 +356,85 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink to this headline">¶</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.</p>
-<div class="section" id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this headline">¶</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="markdown">
+<h1><code class="docutils literal notranslate"><span class="pre">Markdown</span></code><a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
+<p>Como vimos anteriormente, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é a principal forma de se agregar valor a um <em>notebook</em>. Nesta seção veremos com detalhes como utilizar Markdown em <em>notebooks</em> Jupyter. <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, no entanto, tem diversas aplicações além de criar notebooks - por exemplo, páginas iniciais de repositórios Github são criados em <code class="docutils literal notranslate"><span class="pre">.md</span></code> (a extensão de <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>). Este livro é outro exemplo, já que foi criado com um misto de <em>notebooks</em> Jupyter (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) e Markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>).</p>
+<div class="admonition note" id="html-admonition">
+<p class="admonition-title">Nota</p>
+<p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é uma linguagem de marcação (<em>markup language</em>) leve que adiciona elementos de formatação a textos.  Além disto, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> permite de forma simples o acréscimo de elementos visuais ao texto (figuras, tabelas, vídeos, etc.).</p>
 </div>
-<div class="section" id="what-are-roles-and-directives">
-<h2>What are roles and directives?<a class="headerlink" href="#what-are-roles-and-directives" title="Permalink to this headline">¶</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<div class="section" id="using-a-directive">
-<h3>Using a directive<a class="headerlink" href="#using-a-directive" title="Permalink to this headline">¶</a></h3>
-<p>At its simplest, you can insert a directive into your book’s content like so:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{mydirectivename}
-My directive content
-```
-</pre></div>
+<p>Com certeza você tem contato diário com linguagens de marcação - mesmo sem saber. A maioria das páginas de internet é construída com <code class="docutils literal notranslate"><span class="pre">HTML</span></code> (<em>hypertext markup language</em>). Vamos comparar <code class="docutils literal notranslate"><span class="pre">HTML</span></code> com Markdown para a criação de um parágrafo simples:</p>
+<p>Este bloco de código cria um título (o texto entre os marcadores <code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> e <code class="docutils literal notranslate"><span class="pre">&lt;/h1&gt;</span></code>), um parágrafo (de <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code> a <code class="docutils literal notranslate"><span class="pre">&lt;/p&gt;</span></code>) e um link (<code class="docutils literal notranslate"><span class="pre">&lt;a</span> <span class="pre">href=&quot;....&quot;&gt;</span></code> a <code class="docutils literal notranslate"><span class="pre">&lt;/a&gt;</span></code>)</p>
+<p>Agora, vamos fazer o mesmo em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>:</p>
+<p>Como você pôde observar, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> tem o propósito de facilitar o desenvolvimento de formatação e adição de elementos em uma página de forma mais simples. O motivo para compararmos com <code class="docutils literal notranslate"><span class="pre">HTML</span></code> é que, na verdade, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é um superconjunto de <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. Veja a figura abaixo:</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="content/img/markdown.png"><img alt="content/img/markdown.png" src="content/img/markdown.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Funcionamento do Markdown (simplificado) - Adaptado de <a class="reference external" href="https://www.markdownguide.org/getting-started/">markdownguide.org</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>This will only work if a directive with name <code class="docutils literal notranslate"><span class="pre">mydirectivename</span></code> already exists
-(which it doesn’t). There are many pre-defined directives associated with
-Jupyter Book. For example, to insert a note box into your content, you can
-use the following directive:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
-Here is a note
-```
-</pre></div>
+<p>De forma simples, a formatação em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é levada a um aplicativo que converte a formatação para <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, cujo resultado final é mostrado. Assim, com <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é possível desviar de ter que criar códigos com todo o detalhamento requerido pelos protocolos <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. Por outro lado, <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> é limitado e, em muitas siutações, você terá que utilizar <code class="docutils literal notranslate"><span class="pre">HTML</span></code> padrão para obter os resultados desejados.</p>
+<div class="admonition seealso" id="html-seealso">
+<p class="admonition-title">Veja também</p>
+<p>Para ver mais usos e aplicações de <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, <a class="reference external" href="https://www.markdownguide.org/getting-started/">esta página</a> contém muitas informações úteis.</p>
 </div>
-<p>This results in:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
+<div class="admonition tip" id="html-tip">
+<p class="admonition-title">Dica</p>
+<p>Para usar <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> em uma célula em um <em>notebook</em> Jupyter, basta clicar na célula e usar mudar no menu de <code class="docutils literal notranslate"><span class="pre">Code</span></code> para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>. Alternativamente, você pode navegar até a célula desejada usando <code class="docutils literal notranslate"><span class="pre">esc</span></code> e setas e apertar <code class="docutils literal notranslate"><span class="pre">M</span></code>. Na seção *<strong>Notebooks</strong> <strong>Jupyter</strong>, você encontra mais atalhos úteis.</p>
 </div>
-<p>In your built book.</p>
-<p>For more information on writing directives, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</div>
-<div class="section" id="using-a-role">
-<h3>Using a role<a class="headerlink" href="#using-a-role" title="Permalink to this headline">¶</a></h3>
-<p>Roles are very similar to directives, but they are less-complex and written
-entirely on one line. You can insert a role into your book’s content with
-this pattern:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Some content {rolename}`and here is my role&#39;s content!`
-</pre></div>
-</div>
-<p>Again, roles will only work if <code class="docutils literal notranslate"><span class="pre">rolename</span></code> is a valid role’s name. For example,
-the <code class="docutils literal notranslate"><span class="pre">doc</span></code> role can be used to refer to another page in your book. You can
-refer directly to another page by its relative path. For example, the
-role syntax <code class="docutils literal notranslate"><span class="pre">{doc}`intro`</span></code> will result in: <span class="xref std std-doc">intro</span>.</p>
-<p>For more information on writing roles, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</div>
-<div class="section" id="adding-a-citation">
-<h3>Adding a citation<a class="headerlink" href="#adding-a-citation" title="Permalink to this headline">¶</a></h3>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="../markdown.html#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{bibliography}
-```
-</pre></div>
-</div>
-<p>Resulting in a rendered bibliography that looks like:</p>
-<p id="id2"><dl class="citation">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">HdHPK14</a></span></dt>
-<dd><p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</dd>
-</dl>
-</p>
-</div>
-<div class="section" id="executing-code-in-your-markdown-files">
-<h3>Executing code in your markdown files<a class="headerlink" href="#executing-code-in-your-markdown-files" title="Permalink to this headline">¶</a></h3>
-<p>If you’d like to include computational content inside these markdown files,
-you can use MyST Markdown to define cells that will be executed when your
-book is built. Jupyter Book uses <em>jupytext</em> to do this.</p>
-<p>First, add Jupytext metadata to the file. For example, to add Jupytext metadata
-to this markdown page, run this command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">markdown</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
-</div>
-<p>Once a markdown file has Jupytext metadata in it, you can add the following
-directive to run the code at build time:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell}
-print(&quot;Here is some code to execute&quot;)
-```
-</pre></div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<p>For more information about executing computational content with Jupyter Book,
-see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyST-NB documentation</a>.</p>
+<div class="section" id="criando-titulos">
+<h2>Criando títulos<a class="headerlink" href="#criando-titulos" title="Permalink to this headline">¶</a></h2>
+<p>Para adicionar títulos a uma célula, você utilizará o marcador asterisco ( <code class="docutils literal notranslate"><span class="pre">*</span></code>), equivalente ao <code class="docutils literal notranslate"><span class="pre">h</span></code> em <code class="docutils literal notranslate"><span class="pre">HTML</span></code>.</p>
+<div class="admonition tip" id="id2">
+<p class="admonition-title">Dica</p>
+<p>A lógica de tamanho dos títulos é do maior para o menor, tanto em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> quanto <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. A diferença é que em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> para cada nível menor, você acrescenta um asterisco (<code class="docutils literal notranslate"><span class="pre">*</span></code> = <code class="docutils literal notranslate"><span class="pre">h1</span></code>, <code class="docutils literal notranslate"><span class="pre">**</span></code> = <code class="docutils literal notranslate"><span class="pre">h2</span></code>, etc.).</p>
 </div>
 </div>
+<div class="section" id="criando-listas">
+<h2>Criando listas<a class="headerlink" href="#criando-listas" title="Permalink to this headline">¶</a></h2>
+<p>Para criar listas, você pode usar os marcadores <code class="docutils literal notranslate"><span class="pre">*</span></code> e <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
+<div class="admonition attention" id="html-attention">
+<p class="admonition-title">Atenção</p>
+<p>Para criar listas, deve haver um espaço em branco entre o marcador (<code class="docutils literal notranslate"><span class="pre">*</span></code>/<code class="docutils literal notranslate"><span class="pre">-</span></code>) e a palavra seguinte. No caso do marcador <code class="docutils literal notranslate"><span class="pre">*</span></code>, quando diretamente ligado à palavra seguinte, impõe formatação <em>itálica</em> à palavra (veja mais adiante em <strong>Formatando texto</strong>).</p>
+</div>
+<p>Para criar subníveis em uma lista, use espaçamento (<code class="docutils literal notranslate"><span class="pre">tab</span></code>):</p>
+<p>Resultado:</p>
+<ul class="simple">
+<li><p>Esfirras:</p>
+<ul>
+<li><p>Carne</p></li>
+<li><p>Queijo</p></li>
+<li><p>Calabresa</p>
+<ul>
+<li><p>pura</p></li>
+<li><p>com queijo</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Perceba que a formatação de níveis é feita de forma automática.</p>
+</div>
+<div class="section" id="criando-links-rever-html">
+<h2>Criando links - <strong>REVER HTML</strong><a class="headerlink" href="#criando-links-rever-html" title="Permalink to this headline">¶</a></h2>
+<p>Um <em>link</em> é uma ligação entre a um local (uma página ou parte de uma página) e outro (outra página ou outra parte de uma página, por exemplo). Por este motivo, um link precisa ter uma <em>âncora</em> (onde clicar) e uma <em>referência de hipertexto</em> (o alvo onde você quer chegar). Por este motivo, um link em <code class="docutils literal notranslate"><span class="pre">HTML</span></code> se escreve da seguinte maneira:</p>
+<div class="section" id="resultado">
+<h3>Resultado:<a class="headerlink" href="#resultado" title="Permalink to this headline">¶</a></h3>
+<p>Ao clicar em <a href="www.google.com">Google</a>, você irá para o site do Google.</p>
+<p>Neste caso, a <em>âncora</em> ( <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> … <code class="docutils literal notranslate"><span class="pre">&lt;/a&gt;</span></code>) indica qual parte do texto será clicável. A <em>referência</em> (<code class="docutils literal notranslate"><span class="pre">href=&quot;...&quot;</span></code>) indica o endereço aonde você quer chegar.</p>
+<p>Em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> este processo é simplificado em que a <em>âncora</em> (texto clicável) é um par de colchetes <code class="docutils literal notranslate"><span class="pre">[...]</span></code> ligado a um par de parênteses (<code class="docutils literal notranslate"><span class="pre">(...)</span></code>) que faz a referência (endereço):</p>
+</div>
+<div class="section" id="id3">
+<h3>Resultado:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Ao clicar em <a class="reference external" href="http://www.google.com">Google</a>, você irá para o site do Google.</p>
+<p>Apesar de ser mais simples fazer links em <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> que em <code class="docutils literal notranslate"><span class="pre">HTML</span></code>, há situações em que pode ser importante saber como fazer links em <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. Um exemplo é criar um link que seja aberto numa nova aba / página separada. Veja que adicionamos um marcador <code class="docutils literal notranslate"><span class="pre">target=&quot;...&quot;</span></code> à âncora <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>:</p>
+</div>
+<div class="section" id="id4">
+<h3>Resultado:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Ao clicar em <a href="google.com" target="_blank">Google</a>, você irá para o site do Google.</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="para-saber-mais">
+<h1>Para saber mais<a class="headerlink" href="#para-saber-mais" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -453,7 +461,14 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="instalando_bibliotecas.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Bibliotecas e módulos</p>
+        </div>
+    </a>
 </div>
             
         </div>

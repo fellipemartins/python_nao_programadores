@@ -55,10 +55,9 @@ Há diversas formas de colaborar com este projeto:
 
 ## Autores
 
-Este livro foi escrito por Fellipe Silva Martins e Leonardo Vils. 
+Este livro foi escrito por Fellipe Martins e Leonardo Vils. 
 
-<img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4240645Z2" width="90" align="center"/>
-
+Fellipe Martins
 * [Currículo Lattes](http://lattes.cnpq.br/7912881403948084)
 * email: fellipemartins@uni9.pro.br
 * [Programa de Pós-Graduação em Informática e Gestão do Conhecimento (UNINOVE)](https://www.uninove.br/cursos/mestrado-e-doutorado/presencial/mestrado-e-doutorado-em-inform%C3%A1tica-e-gest%C3%A3o-do-conhecimento)
@@ -66,8 +65,7 @@ Este livro foi escrito por Fellipe Silva Martins e Leonardo Vils.
 
 > Fellipe Martins é professor do quadro permanente do Programa de Pós-Graduação (mestrado / doutorado) em Informática e Gestão do Conhecimento na Universidade Nove de Julho. Doutor em Administração (Estratégia) e Mestre em Engenharia de Produção (Gestão e Otimização da Produção) pela Universidade Nove de Julho - SP. Bacharel em Línguas Estrangeiras Aplicadas às Negociações Internacionais pela Universidade Estadual de Santa Cruz - BA. Ex-bolsista do Governo do Departamento de Charente-Maritime (França) para estudos na Université de La Rochelle (2006-2007). Co-líder do tema de pesquisa em estratégia comportamental na Associação Nacional de Pós-Graduação em Administração (ANPAD / ESO-1). Líder do tema de pesquisa em transformação digital no Congresso Brasileiro de Gestão do Conhecimento (KM Brasil).
 
-<img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4319875A5" width="90" align="center"/>
-
+Leonardo Vils
 * [Currículo Lattes](http://lattes.cnpq.br/3969955798466284)
 * email: leonardovils@uni9.pro.br
 * [Programa de Pós-Graduação em Gestão de Projetos (UNINOVE)](https://www.uninove.br/cursos/mestrado-e-doutorado/presencial/mestrado-e-doutorado-profissional-em-administracao-gestao-de-projetos)
@@ -81,7 +79,7 @@ Este livro foi escrito por Fellipe Silva Martins e Leonardo Vils.
 </div>
 
 Colaboraram com este projeto:
-- [Cristiano Silva Martins](http://lattes.cnpq.br/2134033520588291).
+- [Cristiano Martins](http://lattes.cnpq.br/2134033520588291).
 - [Déborah Foroni](http://lattes.cnpq.br/4356168879181955).
 
 
@@ -105,8 +103,6 @@ MARTINS, F. S.; VILS, L. Análise de dados e estatística com Python para não p
 Martins, F. S.; Vils, L. (2022, Feb XX). Análise de dados e estatística com Python para não programadores. https://fellipemartins.github.io/python_nao_programadores/
 
 
-
-
 Ou formato BibTeX (LaTeX):
 ```bibtex
 @misc{martins2021pythonnaoprogramadores,
@@ -114,6 +110,6 @@ Ou formato BibTeX (LaTeX):
   title = {Análise de dados e estatística com Python para não programadores},
   url = {https://fellipemartins.github.io/python_nao_programadores/},
   year = {2022},
-  month = {March}
+  month = {June}
 }
 ```

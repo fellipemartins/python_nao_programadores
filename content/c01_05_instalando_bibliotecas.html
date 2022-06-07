@@ -56,8 +56,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Markdown" href="intro_markdown.html" />
-    <link rel="prev" title="Instalando o Python" href="instalacao_python.html" />
+    <link rel="next" title="Notebooks Jupyter" href="c01_06_notebooks.html" />
+    <link rel="prev" title="Instalando o Python" href="c01_04_instalacao_python.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,22 +108,22 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="introducao.html">
+  <a class="reference internal" href="c01_01_introducao.html">
    Introdução
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="como_usar_livro.html">
+  <a class="reference internal" href="c01_02_como_usar_livro.html">
    Como usar este livro
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="linha_comando.html">
+  <a class="reference internal" href="c01_03_linha_comando.html">
    Interface de linha de comando
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="instalacao_python.html">
+  <a class="reference internal" href="c01_04_instalacao_python.html">
    Instalando o Python
   </a>
  </li>
@@ -133,7 +133,15 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="intro_markdown.html">
+  <a class="reference internal" href="c01_06_notebooks.html">
+   <em>
+    Notebooks
+   </em>
+   Jupyter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_07_intro_markdown.html">
    Markdown
   </a>
  </li>
@@ -190,7 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/instalando_bibliotecas.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/c01_05_instalando_bibliotecas.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -210,7 +218,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fcontent/instalando_bibliotecas.html&body=Your%20issue%20content%20here."><button
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fcontent/c01_05_instalando_bibliotecas.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -384,7 +392,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">Nota</p>
 <p>De forma simplificada, uma <strong>função</strong> é um conjunto nomeado de uma ou mais operações que pode ser reutilizado.</p>
 </div>
-<p>O problema é que isto não está no cerne (<em>core</em>) do Python. É aí que entram as bibliotecas.</p>
+<p>O problema é que esta função (raiz quadrada) não está no cerne (<em>core</em>) do Python. É aí que entram as bibliotecas.</p>
 <div class="admonition note" id="id1">
 <p class="admonition-title">Nota</p>
 <p>Uma <strong>biblioteca</strong> é uma coleção de código, externo ao cerne do Python, mas que pode ser incorporada por meio de <strong>importação</strong>.</p>
@@ -427,7 +435,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Para instalar uma biblioteca com <code class="docutils literal notranslate"><span class="pre">pip</span></code> (caso você tenha adicionado o Python ao <code class="docutils literal notranslate"><span class="pre">PATH</span></code>) entre no <code class="docutils literal notranslate"><span class="pre">cmd</span></code> / <code class="docutils literal notranslate"><span class="pre">PowerShell</span></code> / <code class="docutils literal notranslate"><span class="pre">terminal</span></code> e digite <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> + o nome da biblioteca desejada. Alternativamente, você pode usar o <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">prompt</span></code> e digitar o mesmo comando. Como exemplo, vamos instalar a biblioteca <code class="docutils literal notranslate"><span class="pre">camelcase</span></code>.</p>
 <div class="admonition tip" id="id2">
 <p class="admonition-title">Dica</p>
-<p><strong>Camelcase</strong> é uma forma de organizar nomes em linguagem de programação. Vamos imaginar que você quer nomear algo <code class="docutils literal notranslate"><span class="pre">codigo</span> <span class="pre">python</span></code>.</p>
+<p><strong>Camelcase</strong> é uma forma de organizar nomes em linguagem de programação (<code class="docutils literal notranslate"><span class="pre">CamelCase</span></code> em que cada palavra começa com maiúscula, imitando as corcovas de um camelo, daí o nome).</p>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">silva</span><span class="o">&gt;</span><span class="n">pip</span> <span class="n">install</span> <span class="n">camelcase</span>
 <span class="o">...</span>
@@ -441,7 +449,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="abreviando-bibliotecas">
 <h2>Abreviando bibliotecas<a class="headerlink" href="#abreviando-bibliotecas" title="Permalink to this headline">¶</a></h2>
-<p>Além disso, é comum, ao importar uma biblioteca, darmos um apelido (<em>alias</em>) como abreviação e economizar digitação - use <code class="docutils literal notranslate"><span class="pre">import</span></code> + <code class="docutils literal notranslate"><span class="pre">[nome]</span></code> + <code class="docutils literal notranslate"><span class="pre">as</span></code> + <code class="docutils literal notranslate"><span class="pre">[outro</span> <span class="pre">nome]</span></code>. Por exemplo, é muito comum encurtar as bibliotecas <code class="docutils literal notranslate"><span class="pre">numpy</span></code> e <code class="docutils literal notranslate"><span class="pre">pandas</span></code> assim:</p>
+<p>Além disso, é comum, ao importar uma biblioteca, darmos um apelido (<em>alias</em>) como abreviação e economizar digitação - use <code class="docutils literal notranslate"><span class="pre">import</span></code> + <code class="docutils literal notranslate"><span class="pre">[nome</span> <span class="pre">original]</span></code> + <code class="docutils literal notranslate"><span class="pre">as</span></code> + <code class="docutils literal notranslate"><span class="pre">[nome</span> <span class="pre">alternativo]</span></code>. Por exemplo, é muito comum encurtar as bibliotecas <code class="docutils literal notranslate"><span class="pre">numpy</span></code> e <code class="docutils literal notranslate"><span class="pre">pandas</span></code> assim:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
@@ -449,9 +457,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Assim, chamar a função <code class="docutils literal notranslate"><span class="pre">read_csv()</span></code> do <code class="docutils literal notranslate"><span class="pre">pandas</span></code> (algo que você provavelmente fará centenas de vezes) se torna mais cômodo - isto é, usar <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code> ao invés de <code class="docutils literal notranslate"><span class="pre">pandas.read_csv()</span></code>.</p>
 <div class="admonition tip" id="id3">
 <p class="admonition-title">Dica</p>
-<p>Uma curiosidade é que a biblioteca de visualização <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> é tradicionalmente encurtada para <code class="docutils literal notranslate"><span class="pre">sns</span></code> por causa de uma piada da equipe desenvolvedora, que sempre relacionava a biblioteca <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> ao personagem Samuel Norman Seaborn da série <a href="https://en.wikipedia.org/wiki/Sam_Seaborn" target="_blank">The West Wing</a>. A partir de agora, quando você vir o comando extremamente comum <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">seaborn</span> <span class="pre">as</span> <span class="pre">sns</span></code>, você já sabe o motivo.</p>
+<p>Uma curiosidade é que a biblioteca de visualização <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> é tradicionalmente encurtada para <code class="docutils literal notranslate"><span class="pre">sns</span></code> por causa de uma piada da equipe desenvolvedora, que sempre relacionava a biblioteca <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> ao personagem <em>Samuel Norman Seaborn</em> da série <a href="https://en.wikipedia.org/wiki/Sam_Seaborn" target="_blank">The West Wing</a>. A partir de agora, quando você vir o comando extremamente comum <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">seaborn</span> <span class="pre">as</span> <span class="pre">sns</span></code>, você já sabe o motivo.</p>
 </div>
-<p>Para terminar, você pode importar somente algumas partes de uma biblioteca, caso só pretenda usar aquela parte (economizando assim, memória gasta e poluindo menos o espaço de nomes). Para tanto, use o comando <code class="docutils literal notranslate"><span class="pre">from</span></code> + nome da biblioteca + <code class="docutils literal notranslate"><span class="pre">import</span></code> + componente. Quando você importa algo com <code class="docutils literal notranslate"><span class="pre">from</span></code> você traz para o seu ambiente os nomes do componente - ou seja, você pode usar diretamente, sem refernciar com <code class="docutils literal notranslate"><span class="pre">.</span></code>.</p>
+<p>Para terminar, você pode importar somente algumas partes de uma biblioteca, caso só pretenda usar aquela parte (economizando assim, memória gasta e poluindo menos o espaço de nomes). Para tanto, use o comando <code class="docutils literal notranslate"><span class="pre">from</span></code> + nome da biblioteca + <code class="docutils literal notranslate"><span class="pre">import</span></code> + componente. Quando você importa algo com <code class="docutils literal notranslate"><span class="pre">from</span></code> você traz para o seu ambiente os nomes do componente - ou seja, você pode usar diretamente, sem referenciar com <code class="docutils literal notranslate"><span class="pre">.</span></code>.</p>
 <p>Anteriomente, importamos a biblioteca <code class="docutils literal notranslate"><span class="pre">math</span></code>, mas precisamos ainda usar <code class="docutils literal notranslate"><span class="pre">.</span></code> para chamar a função <code class="docutils literal notranslate"><span class="pre">sqrt()</span></code>. Caso você use <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">math</span> <span class="pre">import</span> <span class="pre">sqrt</span></code>, você pode fazer:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
@@ -470,15 +478,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p>No entanto, fora de alguns casos já fossilizados (isto é, todo mundo faz isso), como no caso de <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">matplotlib</span> <span class="pre">import</span> <span class="pre">pyplot</span> <span class="pre">as</span> <span class="pre">plt</span></code>, deve-se evitar usar <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">X</span> <span class="pre">import</span> <span class="pre">Y</span></code> porque diminui a legibilidade do código. Vamos ser menos preguiçosos e referenciar as bibliotecas originais.</p>
 <div class="admonition attention" id="html-attention">
 <p class="admonition-title">Atenção</p>
-<p>Caso você queira importar todos os componentes de uma biblioteca você <em>pode</em> (mas não deve) usar <code class="docutils literal notranslate"><span class="pre">from</span></code> + nome da biblioteca +  <code class="docutils literal notranslate"><span class="pre">import</span></code> + <code class="docutils literal notranslate"><span class="pre">*</span></code>. Veremos mais adiante o conceito de <em>espaços de nomes</em> (<em>namespaces</em>) na Parte 2 - Programação em Python e quando você importa tudo com <code class="docutils literal notranslate"><span class="pre">*</span></code>, você polui este espaço trazendo todos os comandos da biblioteca importada para o espaço global, e estes podem entrar em conflito com as bibliotecas padrão do Python ou outras bibliotecas instaladas, o que em si constitui uma má prática.</p>
+<p>É possível importar todos os componentes de uma biblioteca e não precisar referenciar com o formato <code class="docutils literal notranslate"><span class="pre">biblioteca.componente()</span></code>. Para tanto, usa-se <code class="docutils literal notranslate"><span class="pre">from</span></code> + biblioteca +  <code class="docutils literal notranslate"><span class="pre">import</span></code> + <code class="docutils literal notranslate"><span class="pre">*</span></code>. No entanto, isto é considerado uma má prática e você deve evitar. Isso ocorre porque quando você importa todo o conteúdo de uma biblioteca, você “polui” o espaço de nomes padrão (os comandos já automaticamente carregados pela biblioteca padrão do Python), com uma diversidade de comandos que podem entrar em conflito (por ter nomes iguais, por exemplo). Veremos mais adiante o conceito de <em>espaços de nomes</em> (<em>namespaces</em>) na Parte 2 - Programação em Python, e você entenderá o impacto de importar todo o conteúdo de um biblioteca com <code class="docutils literal notranslate"><span class="pre">from</span></code> + biblioteca +  <code class="docutils literal notranslate"><span class="pre">import</span></code> + <code class="docutils literal notranslate"><span class="pre">*</span></code></p>
 </div>
 </div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="importando-modulos">
 <h1>Importando módulos<a class="headerlink" href="#importando-modulos" title="Permalink to this headline">¶</a></h1>
 <p>Qualquer trecho de código em Python pode ser salvo para ser reutilizado posteriormente no formato <code class="docutils literal notranslate"><span class="pre">.py</span></code>. Você pode fazer isto em um mero editor de texto como o <code class="docutils literal notranslate"><span class="pre">Bloco</span> <span class="pre">de</span> <span class="pre">notas</span></code> ou <code class="docutils literal notranslate"><span class="pre">gedit</span></code>. Veremos mais adiante outras formas de gerenciar seus códigos em Python.</p>
-<p>A diferença entre um módulo e uma biblioteca reside aí - enquanto um módulo é um arquivo <code class="docutils literal notranslate"><span class="pre">.py</span></code> externo qeueincorporamos no nosso código, uma biblioteca é uma coleção de módulos, podendo conter diversos arquivos <code class="docutils literal notranslate"><span class="pre">.py</span></code> e até mesmo arquivos em outras linguagens de programação ( <code class="docutils literal notranslate"><span class="pre">C++</span></code>, por exemplo).</p>
-<p>Vamos iniciar criando um código simples - uma função chamada <code class="docutils literal notranslate"><span class="pre">dizer_ola()</span></code>, que toda vez que chamada, imprime na tela a expressão <code class="docutils literal notranslate"><span class="pre">Olá!</span></code>. Não se preocupe com esta sintaxe, veremos na Parte 2 Perogramando em Python, como criar nossas próprias funções, como aqui:</p>
+<p>A diferença entre um módulo e uma biblioteca reside aí - enquanto um módulo é um arquivo <code class="docutils literal notranslate"><span class="pre">.py</span></code> externo que incorporamos no nosso código, uma biblioteca é uma coleção de módulos, podendo conter diversos arquivos <code class="docutils literal notranslate"><span class="pre">.py</span></code> e até mesmo arquivos em outras linguagens de programação ( <code class="docutils literal notranslate"><span class="pre">C++</span></code>, por exemplo).</p>
+<p>Vamos iniciar criando um código simples - uma função chamada <code class="docutils literal notranslate"><span class="pre">dizer_ola()</span></code>, que toda vez que chamada, imprime na tela a expressão <code class="docutils literal notranslate"><span class="pre">Olá!</span></code>. Não se preocupe com esta sintaxe, veremos na Parte 2 - Programando em Python, como criar nossas próprias funções, como aqui:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dizer_ola</span><span class="p">():</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Olá!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -541,17 +549,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="instalacao_python.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="c01_04_instalacao_python.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Instalando o Python</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="intro_markdown.html" title="next page">
+    <a class='right-next' id="next-link" href="c01_06_notebooks.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown</p>
+        <p class="prev-next-title"><em>Notebooks</em> Jupyter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

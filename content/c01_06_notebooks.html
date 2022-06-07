@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notebooks Jupyter &#8212; Análise de dados e estatística com Python para não programadores</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Markdown" href="c01_07_intro_markdown.html" />
+    <link rel="prev" title="Bibliotecas e módulos" href="c01_05_instalando_bibliotecas.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Análise de dados e estatística com Python para não programadores</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Boas-vindas
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preparação
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_01_introducao.html">
+   Introdução
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_02_como_usar_livro.html">
+   Como usar este livro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_03_linha_comando.html">
+   Interface de linha de comando
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_04_instalacao_python.html">
+   Instalando o Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_05_instalando_bibliotecas.html">
+   Bibliotecas e módulos
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   <em>
+    Notebooks
+   </em>
+   Jupyter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="c01_07_intro_markdown.html">
+   Markdown
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programação em Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/c01_06_notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://fellipemartins.github.io/python_nao_programadores/intro.html/issues/new?title=Issue%20on%20page%20%2Fcontent/c01_06_notebooks.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abrindo-um-notebook-jupyter">
+   Abrindo um
+   <em>
+    notebook
+   </em>
+   Jupyter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definindo-local-de-execucao">
+   Definindo local de execução
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visao-geral-de-um-notebook">
+   Visão geral de um
+   <em>
+    notebook
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operando-um-notebook-jupyter">
+   Operando um
+   <em>
+    notebook
+   </em>
+   Jupyter
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-e-apagando-celulas">
+     Criando e apagando células
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navegando-entre-as-celulas">
+     Navegando entre as células
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executando-celulas">
+     Executando células
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Notebooks Jupyter</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abrindo-um-notebook-jupyter">
+   Abrindo um
+   <em>
+    notebook
+   </em>
+   Jupyter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definindo-local-de-execucao">
+   Definindo local de execução
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visao-geral-de-um-notebook">
+   Visão geral de um
+   <em>
+    notebook
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operando-um-notebook-jupyter">
+   Operando um
+   <em>
+    notebook
+   </em>
+   Jupyter
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#criando-e-apagando-celulas">
+     Criando e apagando células
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navegando-entre-as-celulas">
+     Navegando entre as células
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executando-celulas">
+     Executando células
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="notebooks-jupyter">
+<h1><em>Notebooks</em> Jupyter<a class="headerlink" href="#notebooks-jupyter" title="Permalink to this headline">¶</a></h1>
+<p>Vamos usar primariamente os <em><strong>notebooks</strong></em> <strong>Jupyter</strong> neste livro como forma de escrever e compartilhar código e análises. De acordo com a equipe mantenedora do projeto <code class="docutils literal notranslate"><span class="pre">Jupyter</span></code>:</p>
+<blockquote>
+<div><p>O <em>notebook</em> Jupyter é uma aplicação web de código aberto que permite criar e compartilhar código, equações, visualizações e texto narrativo. Usos incluem: limpeza e transformação de dados, simulação numérica, modelagem estatística, visualização de dados, aprendizado de máquina e muito mais.</p>
+</div></blockquote>
+<p>Como você pode ver no exemplo abaixo, um <em>notebook</em> Jupyter permite alternar, no mesmo documento, partes de código e partes formatadas em texto (e mais que texto, como veremos) por meio de uma linguagem de marcação leve chamada de <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>.</p>
+<div class="figure align-default" id="directive-fig">
+<a class="reference internal image-reference" href="../_images/exemplo_notebook.png"><img alt="../_images/exemplo_notebook.png" src="../_images/exemplo_notebook.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Exemplo de <em>notebook</em> Jupyter</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
+</div>
+<p>O nome “Jupyter” é um anagrama de <strong>Ju</strong>lia, <strong>Pyt</strong>hon e (<strong>&amp;</strong>) <strong>R</strong> (as três linguagens originais suportadas pelo projeto), além de ser uma homenagem a Galileu, que usava cadernos (<em>notebooks</em>) para documentar seus achados, particularmente das luas de Júpiter .</p>
+<div class="admonition seealso" id="html-seealso">
+<p class="admonition-title">Veja também</p>
+<p>Mais informações sobre o projeto e documentação podem ser encontradas no site oficial do <a class="reference external" href="https://jupyter.org/">projeto Jupyter</a>. Apesar de ser originalmente pensado nas três linguagens originais (Julia, Python e R), hoje o projeto Jupyter dá suporte a diversas linguagens. O <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">repositório oficial</a> dá acesso a todas as versões disponíveis.</p>
+</div>
+<p>Originalmente pensado somente para o modelo de organização de trabalho em <em>notebooks</em>, o projeto Jupyter tem ido para uma direção que se assemelha a desenvolver uma IDE centrada nos notebooks - a próxima iteração do projeto, <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">lab</span></code>. Atualmente recomendamos mais o uso do <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">lab</span></code> que notebooks puros (e essa é a recomendação da equipe mantenedora do projeto).</p>
+<p>De forma resumida, o <em>notebook</em> clássico oferece acesso aos <em>notebooks</em> e a poucas ferramentas de gestão do seu projeto de análise, enquanto o <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">lab</span></code>, evoluiu para uma IDE centrada nos <em>notebooks</em>. O uso de um <em>notebook</em>, no entanto, é o mesmo em ambos. Ambos vêm instalados na distribuição <code class="docutils literal notranslate"><span class="pre">Anaconda</span></code> (ver menu principal).</p>
+<p>Caso você não tenha instalado anteriormente, siga os passos seguintes. Para instalar o <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">lab</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterlab</span>
+</pre></div>
+</div>
+<p>Para instalar o <code class="docutils literal notranslate"><span class="pre">notebook</span></code> clássico:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">notebook</span>
+</pre></div>
+</div>
+<div class="admonition seealso" id="id1">
+<p class="admonition-title">Veja também</p>
+<p>Caso você prefira não trabalhar com linha de comando, você pode baixar o <a class="reference external" href="https://github.com/jupyterlab/jupyterlab-desktop">aplicativo <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">lab</span></code> Desktop</a>, acessível por interface gráfica.</p>
+</div>
+<div class="section" id="abrindo-um-notebook-jupyter">
+<h2>Abrindo um <em>notebook</em> Jupyter<a class="headerlink" href="#abrindo-um-notebook-jupyter" title="Permalink to this headline">¶</a></h2>
+<p>Há mais de uma forma de abrir um jupyter notebook:</p>
+<ol class="simple">
+<li><p>Entrando pelo Anaconda Navigator, clique no ícone Jupyter (ou Jupyterlab)</p></li>
+<li><p>Entrando direto no Jupyter ou Jupyter lab (pelo menu de programas ou no buscador do Windows)</p></li>
+<li><p>Entrando pelo <code class="docutils literal notranslate"><span class="pre">prompt</span></code> do Anaconda, <code class="docutils literal notranslate"><span class="pre">cmd</span></code>/<code class="docutils literal notranslate"><span class="pre">PowerShell</span></code> ou <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, digite o comando <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> ou <code class="docutils literal notranslate"><span class="pre">jupyter-lab</span></code></p></li>
+</ol>
+<p>Caso você utilize algum IDE:</p>
+<div class="admonition seealso" id="id2">
+<p class="admonition-title">Veja também</p>
+<ul class="simple">
+<li><p>Veja mais detalhes de como trabalhar com <em>notebooks</em> Jupyter no <strong>VSCode</strong> na <a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">página oficial</a>.</p></li>
+<li><p>Veja mais detalhes de como trabalhar com <em>notebooks</em> Jupyter no <strong>PyCharm</strong> na <a class="reference external" href="https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html">página oficial</a>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="definindo-local-de-execucao">
+<h2>Definindo local de execução<a class="headerlink" href="#definindo-local-de-execucao" title="Permalink to this headline">¶</a></h2>
+<p>Conforme você tenha diversos projetos de pesquisa, é importante organizá-los em locais separados. Para tanto, é melhor executar um <em>notebook</em> Jupyter direto na pasta desejada. O Jupyter vai iniciar na pasta de instalação por padrão, mas você pode querer mudar isso. Entrando pelo <code class="docutils literal notranslate"><span class="pre">prompt</span></code> do Anaconda, <code class="docutils literal notranslate"><span class="pre">cmd</span></code>/<code class="docutils literal notranslate"><span class="pre">PowerShell</span></code> ou <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, vá até a localização desejada e de lá execute:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">C</span><span class="p">:</span><span class="o">/</span><span class="n">pasta</span> <span class="o">...</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">lab</span> 
+</pre></div>
+</div>
+<p>Alternativamente, você pode querer deixar uma pasta específica como padrão de inicialização. Siga os passos abaixo para mudar a pasta de início:</p>
+<ol class="simple">
+<li><p>Abra o <code class="docutils literal notranslate"><span class="pre">prompt</span></code> do Anaconda, <code class="docutils literal notranslate"><span class="pre">cmd</span></code>/<code class="docutils literal notranslate"><span class="pre">PowerShell</span></code> ou <code class="docutils literal notranslate"><span class="pre">terminal</span></code> e digite <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">--generate-config</span></code> (cria um arquivo em <code class="docutils literal notranslate"><span class="pre">C:\Users\username\.jupyter\jupyter_notebook_config.py</span></code> - a localização pode ser diferente em sua máquina!).</p></li>
+<li><p>Vá até o arquivo e abra em um editor de texto.</p></li>
+<li><p>Procure a linha <code class="docutils literal notranslate"><span class="pre">#c.NotebookApp.notebook_dir</span> <span class="pre">=</span> <span class="pre">''</span></code></p></li>
+<li><p>Substitua pela pasta onde você quer iniciar o Jupyter <code class="docutils literal notranslate"><span class="pre">c.NotebookApp.notebook_dir</span> <span class="pre">=</span> <span class="pre">'/caminho/pasta/'</span></code> (certifique-se de usar barras normais (<code class="docutils literal notranslate"><span class="pre">/</span></code>) e não invertidas)</p></li>
+<li><p>Remova a cerquilha (<code class="docutils literal notranslate"><span class="pre">#</span></code>) do início da linha para que ela seja executada</p></li>
+</ol>
+</div>
+<div class="section" id="visao-geral-de-um-notebook">
+<h2>Visão geral de um <em>notebook</em><a class="headerlink" href="#visao-geral-de-um-notebook" title="Permalink to this headline">¶</a></h2>
+<p>Caso você abra um <em>notebook</em> sem estar num IDE (VSCode, PyCharm, etc.), você verá que o <em>notebook</em> é um aplicativo renderizado no seu navegador de internet padrão. Perceba que, nesse caso, a janela do <code class="docutils literal notranslate"><span class="pre">prompt</span></code> do Anaconda, <code class="docutils literal notranslate"><span class="pre">cmd</span></code>/<code class="docutils literal notranslate"><span class="pre">PowerShell</span></code> ou <code class="docutils literal notranslate"><span class="pre">terminal</span></code> deve permanecer ativa até o fim da sua sessão. O que você vê no navegador é só a parte visual (na verdade, tudo está sendo rodado naquela janela de linha de comando) e, portanto, você não deve fechá-la antes de salvar e terminar sua sessão. Caso isso ocorra, a conexão é perdida.</p>
+<p>Ao abrir seu primeiro <em>notebook</em>, você verá uma janela assim:</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/notebook_01.png"><img alt="../_images/notebook_01.png" src="../_images/notebook_01.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Janela inicial de um <em>notebook</em> Jupyter</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Para encerrar sua sessão, use o botão <code class="docutils literal notranslate"><span class="pre">Quit</span></code> (canto superior direito)</p></li>
+<li><p>Para criar um novo <em>notebook</em>, selecione o botão <code class="docutils literal notranslate"><span class="pre">New</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">Python</span> <span class="pre">3</span></code> (canto superior direito)</p></li>
+<li><p>As linhas representam os arquivos existentes na pasta de inicialização</p></li>
+<li><p>Cada <em>notebook</em> novo aberto ocupa uma nova aba/janela do seu navegador.</p></li>
+</ul>
+<p>Os <em>notebooks</em> têm a seguinte visão:</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/notebook_02b.png"><img alt="../_images/notebook_02b.png" src="../_images/notebook_02b.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Exemplo de <em>notebook</em> Jupyter</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Botão salvar <code class="docutils literal notranslate"><span class="pre">💾</span></code> - salva o seu <em>notebook</em> (1)</p></li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">+</span></code> - cria uma nova célula (2)</p></li>
+<li><p>Botão cortar (3)</p></li>
+<li><p>Botão copiar (4)</p></li>
+<li><p>Botão colar (5)</p></li>
+<li><p>Botões para navegar pelas células (você também pode usar o teclado):</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">↑</span></code>: navega para cima (6)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">↓</span></code>: navega para baixo (7)</p></li>
+</ul>
+</li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">▶️</span></code> - executa a célula (8):</p>
+<ul>
+<li><p>se for código, executa o código</p></li>
+<li><p>se for <code class="docutils literal notranslate"><span class="pre">Markdown</span></code>, renderiza</p></li>
+</ul>
+</li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">⏹️</span></code> - parar execução (9)</p></li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">⟳</span></code> - reiniciar o <em>kernel</em> (10)</p></li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">⏩</span></code> - reiniciar o <em>kernel</em> e executar desde o início (11)</p></li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">code</span></code> - mudar de código para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> e vice-versa (12)</p></li>
+<li><p>Botão <code class="docutils literal notranslate"><span class="pre">⌨️</span></code> - abrir o menu de opções de comandos (13)</p></li>
+</ul>
+</div>
+<div class="section" id="operando-um-notebook-jupyter">
+<h2>Operando um <em>notebook</em> Jupyter<a class="headerlink" href="#operando-um-notebook-jupyter" title="Permalink to this headline">¶</a></h2>
+<p>Um <em>notebook</em> Jupyter é, no fundo, uma coleção de células - que contêm código, texto, etc. Todo <em>notebook</em> começa com uma célula em branco:</p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/cell_02.png"><img alt="../_images/cell_02.png" src="../_images/cell_02.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Célula em branco (modo de edição)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>A borda em verde indica que a célula está em modo de <em>edição</em> - isto é, você pode alterar o conteúdo. Toda célula nova criada vem por padrão em formato de código. Células de código começam com o texto <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code>, que indica que esta célula pode conter uma entrada (<code class="docutils literal notranslate"><span class="pre">In</span></code> = <em>input</em>) e o número da entrada (<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code> recebe o número).</p>
+<p>Caso você queira mudar para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> (o formato de texto que usaremos), você primeiro precisa mudar para o modo <em>comando</em>. Este modo permite navegar pelas células de um notebook e alterar de um formato para outro (por exemplo de códgo para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> e vice-versa). Para mudar de um modo para outro aperte <code class="docutils literal notranslate"><span class="pre">esc</span></code>:</p>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/cell_01.png"><img alt="../_images/cell_01.png" src="../_images/cell_01.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Célula em branco (modo de comando)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>Em seguida, digite <code class="docutils literal notranslate"><span class="pre">m</span></code> para mudar para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> - perceba que células <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> não contém <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code> no início da célula. Para mudar novamente para código, digite <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/cell_03.png"><img alt="../_images/cell_03.png" src="../_images/cell_03.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Célula em branco (<code class="docutils literal notranslate"><span class="pre">Markdown</span></code>)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>Para ir para o modo de edição de uma célula, basta clicar <code class="docutils literal notranslate"><span class="pre">↵</span> <span class="pre">Enter</span></code>.</p>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/cell_04.png"><img alt="../_images/cell_04.png" src="../_images/cell_04.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Célula em branco (<code class="docutils literal notranslate"><span class="pre">Markdown</span></code>), modo de edição.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p>Você pode também alternar entre os modos por meio do botão <code class="docutils literal notranslate"><span class="pre">code</span></code> (ver item acima). Em resumo:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">esc</span></code>: muda de edição para comando</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">m</span></code>: muda para <code class="docutils literal notranslate"><span class="pre">Markdown</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">y</span></code>: muda para código</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">↵</span> <span class="pre">Enter</span></code>: muda de comando para edição</p></li>
+</ul>
+<div class="section" id="criando-e-apagando-celulas">
+<h3>Criando e apagando células<a class="headerlink" href="#criando-e-apagando-celulas" title="Permalink to this headline">¶</a></h3>
+<p>Além do botão <code class="docutils literal notranslate"><span class="pre">+</span></code> no menu, você tem dois atalhos importantes para criar novas células. Para criar uma célula acima da célula atual, digite <code class="docutils literal notranslate"><span class="pre">a</span></code>. Caso esteja em modo de edição (borda verde), mude para o modo comando com <code class="docutils literal notranslate"><span class="pre">esc</span></code> e em seguida digite <code class="docutils literal notranslate"><span class="pre">a</span></code>:</p>
+<div class="figure align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/esca.png"><img alt="../_images/esca.png" src="../_images/esca.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Criando uma célula acima com <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">a</span></code></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>Contudo, na maioria das vezes, criamos células abaixo, seguindo o fluxo do desenvolvimento. Para criar uma célula abaixo da célula atual, digite <code class="docutils literal notranslate"><span class="pre">b</span></code>. Caso esteja em modo de edição (borda verde), mude para o modo comando com <code class="docutils literal notranslate"><span class="pre">esc</span></code> e em seguida digite <code class="docutils literal notranslate"><span class="pre">b</span></code>:</p>
+<div class="figure align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/escb.png"><img alt="../_images/escb.png" src="../_images/escb.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Criando uma célula acima com <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">b</span></code></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<p>Para apagar uma célula, digite <code class="docutils literal notranslate"><span class="pre">dd</span></code> (de <em>delete</em>). Caso esteja em modo de edição (borda verde), mude para o modo comando com <code class="docutils literal notranslate"><span class="pre">esc</span></code> e em seguida digite <code class="docutils literal notranslate"><span class="pre">dd</span></code>.</p>
+<p>Em resumo:</p>
+<ul class="simple">
+<li><p>Para criar uma célula acima, use  <code class="docutils literal notranslate"><span class="pre">a</span></code> (ou <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">a</span></code>, caso esteja em edição)</p></li>
+<li><p>Para criar uma célula abaixo, use  <code class="docutils literal notranslate"><span class="pre">b</span></code> (ou <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">b</span></code>, caso esteja em edição)</p></li>
+<li><p>Para apagar uma célula, vá até ela e use <code class="docutils literal notranslate"><span class="pre">dd</span></code> (ou <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">dd</span></code>, caso esteja em edição)</p></li>
+</ul>
+</div>
+<div class="section" id="navegando-entre-as-celulas">
+<h3>Navegando entre as células<a class="headerlink" href="#navegando-entre-as-celulas" title="Permalink to this headline">¶</a></h3>
+<p>Em modo de comando (borda azul), use as setas do teclado para subir ou descer. Para selecionar mais de uma célula, use <code class="docutils literal notranslate"><span class="pre">shift</span></code> mais a seta da direção desejada. Em resumo:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">↑</span></code>: navega para cima</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">↓</span></code>: navega para baixo</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> + <code class="docutils literal notranslate"><span class="pre">↑</span></code>: seleciona células para cima</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> + <code class="docutils literal notranslate"><span class="pre">↓</span></code>: seleciona células para cima</p></li>
+</ul>
+</div>
+<div class="section" id="executando-celulas">
+<h3>Executando células<a class="headerlink" href="#executando-celulas" title="Permalink to this headline">¶</a></h3>
+<p>Além do botão <code class="docutils literal notranslate"><span class="pre">▶️</span></code> no menu, há alguns atalhos importantes para executar células:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> + <code class="docutils literal notranslate"><span class="pre">enter</span></code>: executa a célula atual, e seleciona a célula seguinte.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">enter</span></code>: executa a célula atual</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">alt</span></code> + <code class="docutils literal notranslate"><span class="pre">enter</span></code>: executa a célula atual, insere nova célula abaixo.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="c01_05_instalando_bibliotecas.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Bibliotecas e módulos</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="c01_07_intro_markdown.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Fellipe Martins & Leonardo Vils<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
