@@ -25,10 +25,7 @@ Leonardo Vils
 
 > Leonardo Vils é economista com Mestrado e Doutorado em Administração de Empresas pela Universidade Nove de Julho. Professor permanente do programa de Pós-Graduação em Cidades Inteligentes e Sustentáveis e do Programa de Pós-Graduação em Gestão de Projetos da Universidade Nove de Julho. Tem como linhas de pesquisa Psicologia Ambiental e Território Construído, Economia Comportamental e Inovavo em Projetos. Experiência de mais de 25 anos em cargos executivos de empresas de grande porte. Autor de sete livros. 
 
-<div class="admonition warning" name="html-warning">
-<p class="title">Aviso</p>
 **Este livro representa única e exclusivamente a opinião dos autores e de forma alguma é relacionado com instuições, associações, empresas ou quaisquer outros vínculos empregatícios e/ou científicos dos autores.**
-</div>
 
 Colaboraram com este projeto:
 - [Cristiano Martins](http://lattes.cnpq.br/2134033520588291).
